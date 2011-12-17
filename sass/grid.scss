@@ -32,10 +32,13 @@ $group-width:		$grid-width - $margins * 2;
 		@for $n from 1 to $columns {
 				.span-#{$n} {
 				width: 100% - $margins * 2;
+			}
+		}
+		// This is cheating, I am sure there is a better way
+		[class^="span-"] {
 				margin: $margins;
 				background: #eee;
 				text-align: center; // testing
-			}
 		}
 	}
 }
@@ -46,9 +49,12 @@ $group-width:		$grid-width - $margins * 2;
 	.group {
 		@for $n from 1 to $columns {
 			.span-#{$n} {
-				float: left;
 				width: ((100%) / $columns) * $n - $margins * 2;
 			}
+		}
+		// This is cheating, I am sure there is a better way
+		[class^="span-"] {
+			float: left;
 		}
 	}
 }
