@@ -9,15 +9,14 @@ $grid-width:		100%;
 $columns:			24;
 // Margins, both left and right, value doubles when totalled
 // If set to 0, group-width value left with $grid-width value. Broken.
-$margins:			2%;
+$margins:			4%;
 // Gutter total width, divide by for left, right margins
-$gutter:			4%;
+$gutter:			1%;
 // Row container after margins subtracted
 $group-width:		$grid-width - $margins * 2;
 
 // BUG: class="span-$column" doesn't acquire style
 // TODO: still need to consider offseting columns.
-// TODO: user gutter instead of margins for column margins.
 // TODO: RTL, float: right instead
 // TODO: Add other Media Queries
 // TODO: Clean up
@@ -32,11 +31,12 @@ $group-width:		$grid-width - $margins * 2;
 		@for $n from 1 to $columns {
 				.span-#{$n} {
 				width: 100% - $margins * 2;
+				margin: 0 $margins;
 			}
 		}
 		// This is cheating, I am sure there is a better way
 		[class^="span-"] {
-				margin: $margins;
+				//margin: $margins;
 				background: #eee;
 				text-align: center; // testing
 		}
@@ -47,13 +47,15 @@ $group-width:		$grid-width - $margins * 2;
 
 @media only screen and (min-width: 800px) {
 	.group {
+		// Add margins
 		@for $n from 1 to $columns {
 			.span-#{$n} {
-				width: ((100%) / $columns) * $n - $margins * 2;
+				width: ((100%) / $columns) * $n - $gutter * 2;
 			}
 		}
 		// This is cheating, I am sure there is a better way
 		[class^="span-"] {
+			margin: $gutter;
 			float: left;
 		}
 	}
