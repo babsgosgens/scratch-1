@@ -1,5 +1,5 @@
 <?php include("includes/top.php"); ?>
-	<div class="grid">
+
 		<header class="group">
 			<div class="span-12">
 				<p>12</p>
@@ -66,5 +66,4 @@
 			</aside>
 		</footer>
 
-	</div>
 <?php include("includes/bottom.php"); ?>
