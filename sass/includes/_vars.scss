@@ -1,6 +1,6 @@
 // Fonts
-$basefont:			13px;
-$baseLineHeight:	1.5;
+$basefont:			18px;
+$baseLine:			1.5em;
 
 // Colors
 $black:		#000;
@@ -10,6 +10,7 @@ $gray80:	lighten($black, 20%);
 $gray60:	lighten($black, 40%);
 $gray40:	lighten($black, 60%);
 $gray20:	lighten($black, 80%);
+$gray5:		lighten($black, 95%);
 
 // Letterpress
 $lp-dark:	1px 1px 1px rgba(0,0,0,.2);
