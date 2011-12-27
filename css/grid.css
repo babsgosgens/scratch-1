@@ -6,84 +6,84 @@
   .microcf:after, .group:after {
     clear: both; }
 
-@media only screen and (min-width: 320px) {
-  .group {
-    margin: 0 auto;
+.group {
+  margin: 0 auto;
+  width: 92%;
+  background: #ddd; }
+  .group .span-1 {
     width: 92%;
-    background: #ddd; }
-    .group .span-1 {
-      width: 92%;
-      margin: 0 4%; }
-    .group .span-2 {
-      width: 92%;
-      margin: 0 4%; }
-    .group .span-3 {
-      width: 92%;
-      margin: 0 4%; }
-    .group .span-4 {
-      width: 92%;
-      margin: 0 4%; }
-    .group .span-5 {
-      width: 92%;
-      margin: 0 4%; }
-    .group .span-6 {
-      width: 92%;
-      margin: 0 4%; }
-    .group .span-7 {
-      width: 92%;
-      margin: 0 4%; }
-    .group .span-8 {
-      width: 92%;
-      margin: 0 4%; }
-    .group .span-9 {
-      width: 92%;
-      margin: 0 4%; }
-    .group .span-10 {
-      width: 92%;
-      margin: 0 4%; }
-    .group .span-11 {
-      width: 92%;
-      margin: 0 4%; }
-    .group .span-12 {
-      width: 92%;
-      margin: 0 4%; }
-    .group .span-13 {
-      width: 92%;
-      margin: 0 4%; }
-    .group .span-14 {
-      width: 92%;
-      margin: 0 4%; }
-    .group .span-15 {
-      width: 92%;
-      margin: 0 4%; }
-    .group .span-16 {
-      width: 92%;
-      margin: 0 4%; }
-    .group .span-17 {
-      width: 92%;
-      margin: 0 4%; }
-    .group .span-18 {
-      width: 92%;
-      margin: 0 4%; }
-    .group .span-19 {
-      width: 92%;
-      margin: 0 4%; }
-    .group .span-20 {
-      width: 92%;
-      margin: 0 4%; }
-    .group .span-21 {
-      width: 92%;
-      margin: 0 4%; }
-    .group .span-22 {
-      width: 92%;
-      margin: 0 4%; }
-    .group .span-23 {
-      width: 92%;
-      margin: 0 4%; }
-    .group [class^="span-"] {
-      background: #eee;
-      text-align: center; } }
-@media only screen and (min-width: 800px) {
+    margin: 0 4%; }
+  .group .span-2 {
+    width: 92%;
+    margin: 0 4%; }
+  .group .span-3 {
+    width: 92%;
+    margin: 0 4%; }
+  .group .span-4 {
+    width: 92%;
+    margin: 0 4%; }
+  .group .span-5 {
+    width: 92%;
+    margin: 0 4%; }
+  .group .span-6 {
+    width: 92%;
+    margin: 0 4%; }
+  .group .span-7 {
+    width: 92%;
+    margin: 0 4%; }
+  .group .span-8 {
+    width: 92%;
+    margin: 0 4%; }
+  .group .span-9 {
+    width: 92%;
+    margin: 0 4%; }
+  .group .span-10 {
+    width: 92%;
+    margin: 0 4%; }
+  .group .span-11 {
+    width: 92%;
+    margin: 0 4%; }
+  .group .span-12 {
+    width: 92%;
+    margin: 0 4%; }
+  .group .span-13 {
+    width: 92%;
+    margin: 0 4%; }
+  .group .span-14 {
+    width: 92%;
+    margin: 0 4%; }
+  .group .span-15 {
+    width: 92%;
+    margin: 0 4%; }
+  .group .span-16 {
+    width: 92%;
+    margin: 0 4%; }
+  .group .span-17 {
+    width: 92%;
+    margin: 0 4%; }
+  .group .span-18 {
+    width: 92%;
+    margin: 0 4%; }
+  .group .span-19 {
+    width: 92%;
+    margin: 0 4%; }
+  .group .span-20 {
+    width: 92%;
+    margin: 0 4%; }
+  .group .span-21 {
+    width: 92%;
+    margin: 0 4%; }
+  .group .span-22 {
+    width: 92%;
+    margin: 0 4%; }
+  .group .span-23 {
+    width: 92%;
+    margin: 0 4%; }
+  .group [class^="span-"] {
+    background: #f2f2f2;
+    text-align: center; }
+
+@media only screen and (min-width: 480px) {
   .group .span-1 {
     width: 2.167%; }
   .group .span-2 {

@@ -21,31 +21,28 @@ $group-width:		$grid-width - $margins * 2;
 // TODO: Add other Media Queries
 // TODO: Clean up
 
-@media only screen and (min-width: 320px) {
-	.group {
-		@extend .microcf;
-		margin: 0 auto;
-		width: $group-width;
-		background: #ddd; // testing
-		// all should be span-24 or smth, since on mobile not floating  - good point Torkil. :)
-		@for $n from 1 to $columns {
-				.span-#{$n} {
-				width: 100% - $margins * 2;
-				margin: 0 $margins;
-			}
+.group {
+	@extend .microcf;
+	margin: 0 auto;
+	width: $group-width;
+	background: #ddd; // testing
+	// all should be span-24 or smth, since on mobile not floating  - good point Torkil. :)
+	@for $n from 1 to $columns {
+		.span-#{$n} {
+			width: 100% - $margins * 2;
+			margin: 0 $margins;
 		}
-		// This is cheating, I am sure there is a better way
-		[class^="span-"] {
-				//margin: $margins;
-				background: #eee;
-				text-align: center; // testing
-		}
+	}
+	// This is cheating, I am sure there is a better way
+	[class^="span-"] {
+			background: $gray5;
+			text-align: center; // testing
 	}
 }
 
 // We're not in Mobile anymore Toto [Thanks for the name spelling correction, @HarryB]
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 480px) {
 	.group {
 		// Add margins
 		@for $n from 1 to $columns {

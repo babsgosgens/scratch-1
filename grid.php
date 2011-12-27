@@ -1,70 +1,67 @@
 <?php include("includes/top.php"); ?>
-	<div class="grid">
 		<header class="group">
 			<div class="span-12">
-				<p>12</p>
+				12
 			</div>
 			<div class="span-12">
-				<p>12</p>
+				12
 			</div>
 		</header>
 
 		<nav class="group">
 			<article class="span-3">
-				<p>3</p>
+				3
 			</article>
 			<aside class="span-5">
-				<p>5</p>
+				5
 			</aside>
 			<article class="span-3">
-				<p>3</p>
+				3
 			</article>
 			<aside class="span-5">
-				<p>5</p>
+				5
 			</aside>
 			<article class="span-3">
-				<p>3</p>
+				3
 			</article>
 			<aside class="span-5">
-				<p>5</p>
+				5
 			</aside>
 		</nav>
 
 		<section class="group">
 			<article class="span-8">
-				<p>8</p>
+				8
 			</article>
 			<aside class="span-8">
-				<p>8</p>
+				8
 			</aside>
 			<article class="span-8">
-				<p>8</p>
+				8
 			</article>
 		</section>
 
 		<section class="group">
 			<article class="span-6">
-				<p>6</p>
+				6
 			</article>
 			<aside class="span-6">
-				<p>6</p>
+				6
 			</aside>
 			<article class="span-6">
-				<p>6</p>
+				6
 			</article>
 			<aside class="span-6">
-				<p>6</p>
+				6
 			</aside>
 		</section>
 
 		<footer class="group">
 			<article class="span-6">
-				<p>18</p>
+				18
 			</article>
 			<aside class="span-18">
-				<p>6</p>
+				6
 			</aside>
 		</footer>
-
-	</div>
 <?php include("includes/bottom.php"); ?>
