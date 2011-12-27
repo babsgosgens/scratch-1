@@ -5,7 +5,7 @@
 <!--[if (gt IE 9)|!(IE)]> <!--> <html xml:lang="en" lang="en" class="no-js"> <!--<![endif]-->
 	<head>
 		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="viewport" content="width=device-width" />
 		<title>Scratch: The Agnostic</title>
 		<meta name="description" content="Describe me." />
 		<!-- NOTE: Uncomment to force Chrome frame for IE or simply delete
@@ -14,6 +14,7 @@
 
 		<!-- from Foundation build script -->
 		<!-- Combine and Compress These CSS Files -->
+		<link rel="stylesheet" href="css/testing.css">
 		<link rel="stylesheet" href="css/resets.css">
 		<link rel="stylesheet" href="css/screen.css">
 		<link rel="stylesheet" href="css/grid.css">
@@ -39,3 +40,5 @@
 		<!--<script src="js/modernizr.custom.js"></script>-->
 	</head>
 	<body>
+	<!-- begin test #container -->
+	<div id"container">
