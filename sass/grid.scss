@@ -30,7 +30,7 @@ $group-width:		$grid-width - $margins * 2;
 	@for $n from 1 to $columns {
 		.span-#{$n} {
 			width: 100% - $margins * 2;
-			margin: 0 $margins;
+			margin: $margins;
 		}
 	}
 	// This is cheating, I am sure there is a better way
