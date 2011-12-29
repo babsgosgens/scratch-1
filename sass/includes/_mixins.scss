@@ -20,6 +20,12 @@
 	font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif
 }
 
+@mixin heading($font-size, $line-height) {
+	font-size: $font-size;
+	line-height: $line-height;
+	margin-bottom: $line-height
+}
+
 @mixin box-shadow {
 	-moz-box-shadow: inset 1px 1px 1px #fff, 1px 1px 3px rgba(0,0,0,.1);
 	-webkit-box-shadow: inset 1px 1px 1px #fff, 1px 1px 3px rgba(0,0,0,.1);

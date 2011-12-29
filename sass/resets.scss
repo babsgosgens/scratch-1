@@ -55,29 +55,19 @@ body {
 	color: $gray90;
 }
 h1 {
-	font-size: 1.5em;
-	line-height: 1em;
-	margin-bottom: 1em
+	@include heading(1.5em, 1em)
 }
 h2 {
-	font-size: 1.4em;
-	line-height: 1.071428em;
-	margin-bottom: 1.071428em
+	@include heading(1.4em, 1.071428em)
 }
 h3 {
-	font-size: 1.3em;
-	line-height: 1.153846em;
-	margin-bottom: 1.153846em
+	@include heading(1.3em, 1.153846em)
 }
 h4, blockquote {
-	font-size: 1.2em;
-	line-height: 1.25em;
-	margin-bottom: 1.25em
+	@include heading(1.2em, 1.25em)
 }
 h5 {
-	font-size: 1.1em;
-	line-height: 1.363636em;
-	margin-bottom: 1.363636em
+	@include heading(1.1em, 1.363636em)
 }
 h1, h2, h3, h4, h5, h6, b, strong {
 	font-weight: bold

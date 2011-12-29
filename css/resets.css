@@ -62,13 +62,13 @@ h1 {
 
 h2 {
   font-size: 1.4em;
-  line-height: 1.071428em;
-  margin-bottom: 1.071428em; }
+  line-height: 1.071em;
+  margin-bottom: 1.071em; }
 
 h3 {
   font-size: 1.3em;
-  line-height: 1.153846em;
-  margin-bottom: 1.153846em; }
+  line-height: 1.154em;
+  margin-bottom: 1.154em; }
 
 h4, blockquote {
   font-size: 1.2em;
@@ -77,8 +77,8 @@ h4, blockquote {
 
 h5 {
   font-size: 1.1em;
-  line-height: 1.363636em;
-  margin-bottom: 1.363636em; }
+  line-height: 1.364em;
+  margin-bottom: 1.364em; }
 
 h1, h2, h3, h4, h5, h6, b, strong {
   font-weight: bold; }
