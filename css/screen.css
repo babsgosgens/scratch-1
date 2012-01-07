@@ -5,3 +5,10 @@
     display: table; }
   .microcf:after {
     clear: both; }
+
+@media only screen and (min-width: 53.142em) {
+  body {
+    font-size: .875em; } }
+@media only screen and (min-width: 116.5em) {
+  body {
+    font-size: 1em; } }

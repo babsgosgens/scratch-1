@@ -19,3 +19,32 @@
 // 16 MODERNIZR
 // 17 TEMPLATE SPECIFICS
 // 18 MEDIA QUERIES
+
+
+// 18 MEDIA QUERIES
+// Measurements change based on $basefont >
+// To calculate: target px width / $basefont = em width
+
+// @ 16px font: roughly 544px, for ipad 768 and 1024
+@media only screen and (min-width: 34em) and (min-device-width: 48em) and (max-device-width: 64em) { 
+
+}
+
+// @ 14px font: roughly 744px
+@media only screen and (min-width: 53.142em) {
+	body {
+		font-size: .875em;
+	}
+}
+
+// @ 14px font: roughly 1224px
+@media only screen and (min-width: 87.428em) { 
+
+}
+
+// @ 16px font: 1864px
+@media only screen and (min-width: 116.5em) { 
+	body {
+		font-size: 1em;
+	}
+}
