@@ -47,7 +47,7 @@ time, mark, audio, video, a, hr {
 /* 	Typography
 ****************************************/
 html {
-  font-size: 18px;
+  font-size: 16px;
   /* base font-size */ }
 
 body {
@@ -62,13 +62,13 @@ h1 {
 
 h2 {
   font-size: 1.4em;
-  line-height: 1.071428em;
-  margin-bottom: 1.071428em; }
+  line-height: 1.071em;
+  margin-bottom: 1.071em; }
 
 h3 {
   font-size: 1.3em;
-  line-height: 1.153846em;
-  margin-bottom: 1.153846em; }
+  line-height: 1.154em;
+  margin-bottom: 1.154em; }
 
 h4, blockquote {
   font-size: 1.2em;
@@ -77,8 +77,8 @@ h4, blockquote {
 
 h5 {
   font-size: 1.1em;
-  line-height: 1.363636em;
-  margin-bottom: 1.363636em; }
+  line-height: 1.364em;
+  margin-bottom: 1.364em; }
 
 h1, h2, h3, h4, h5, h6, b, strong {
   font-weight: bold; }
@@ -116,7 +116,7 @@ code, kbd, pre, samp, tt {
   padding: 1.5em;
   background: #444;
   font-family: 'Andale Mono', 'Lucida Console', monospace;
-  color: white; }
+  color: #fff; }
 
 ins, mark {
   background-color: #ff9;
@@ -154,7 +154,7 @@ hr {
   margin-top: -1px;
   padding: 0;
   border: 0;
-  border-top: 1px solid #cccccc; }
+  border-top: 1px solid #ccc; }
 
 input, select {
   vertical-align: middle; }
@@ -172,10 +172,10 @@ th {
   color: #fff; }
 
 tr:nth-child(even) {
-  background: #eeeeee; }
+  background: #eee; }
 
 tr:nth-child(odd) {
-  background: white; }
+  background: #fff; }
 
 tfoot {
   font-style: italic; }
@@ -228,9 +228,3 @@ img.alignright, img.alignleft {
 
 p.wrapped {
   padding: 1.5em; }
-
-/* beyond mobile */
-@media all and (min-width: 480px) {
-  html {
-    font-size: 14px;
-    /* base font-size */ } }

@@ -249,10 +249,3 @@ img.alignright, img.alignleft {
 p.wrapped {
 	padding: $baseLine;
 }
-
-/* beyond mobile */
-@media all and (min-width: 480px) {
-	html {
-		font-size: 14px; /* base font-size */
-	}
-}
