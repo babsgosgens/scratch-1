@@ -16,7 +16,6 @@
 		<!-- Combine and Compress These CSS Files -->
 		<link rel="stylesheet" href="css/testing.css">
 		<link rel="stylesheet" href="css/resets.css">
-		<link rel="stylesheet" href="css/screen.css">
 		<link rel="stylesheet" href="css/grid.css">
 		<link rel="stylesheet" href="css/forms.css">
 		<link rel="stylesheet" href="css/alert.css">
@@ -24,6 +23,8 @@
 		<link rel="stylesheet" href="css/nav.css">
 		<link rel="stylesheet" href="css/pagination.css">
 		<link rel="stylesheet" href="css/tabs.css">
+		<script type="text/javascript" charset="utf-8" src="js/modernizr.custom.mq.js"></script>
+		<link rel="stylesheet" href="css/screen.css">
 		<!-- End Combine and Compress These CSS Files -->
 		<!-- <link rel="stylesheet" href="../stylesheets/all.css?v=2"> -->
 
