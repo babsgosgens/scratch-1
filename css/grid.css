@@ -8,128 +8,59 @@
 
 .group {
   margin: 0 auto;
-  width: 92%;
+  width: 98%;
   background: #ddd; }
-  .group .span-1 {
-    width: 92%;
-    margin: 4%; }
-  .group .span-2 {
-    width: 92%;
-    margin: 4%; }
-  .group .span-3 {
-    width: 92%;
-    margin: 4%; }
-  .group .span-4 {
-    width: 92%;
-    margin: 4%; }
-  .group .span-5 {
-    width: 92%;
-    margin: 4%; }
-  .group .span-6 {
-    width: 92%;
-    margin: 4%; }
-  .group .span-7 {
-    width: 92%;
-    margin: 4%; }
-  .group .span-8 {
-    width: 92%;
-    margin: 4%; }
-  .group .span-9 {
-    width: 92%;
-    margin: 4%; }
-  .group .span-10 {
-    width: 92%;
-    margin: 4%; }
-  .group .span-11 {
-    width: 92%;
-    margin: 4%; }
-  .group .span-12 {
-    width: 92%;
-    margin: 4%; }
-  .group .span-13 {
-    width: 92%;
-    margin: 4%; }
-  .group .span-14 {
-    width: 92%;
-    margin: 4%; }
-  .group .span-15 {
-    width: 92%;
-    margin: 4%; }
-  .group .span-16 {
-    width: 92%;
-    margin: 4%; }
-  .group .span-17 {
-    width: 92%;
-    margin: 4%; }
-  .group .span-18 {
-    width: 92%;
-    margin: 4%; }
-  .group .span-19 {
-    width: 92%;
-    margin: 4%; }
-  .group .span-20 {
-    width: 92%;
-    margin: 4%; }
-  .group .span-21 {
-    width: 92%;
-    margin: 4%; }
-  .group .span-22 {
-    width: 92%;
-    margin: 4%; }
-  .group .span-23 {
-    width: 92%;
-    margin: 4%; }
   .group [class^="span-"] {
+    margin: 1%;
     background: #f2f2f2;
     text-align: center; }
 
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 57em) {
   .group .span-1 {
-    width: 2.166667%; }
+    width: 2.167%; }
   .group .span-2 {
-    width: 6.333333%; }
+    width: 6.333%; }
   .group .span-3 {
     width: 10.5%; }
   .group .span-4 {
-    width: 14.666667%; }
+    width: 14.667%; }
   .group .span-5 {
-    width: 18.833333%; }
+    width: 18.833%; }
   .group .span-6 {
     width: 23%; }
   .group .span-7 {
-    width: 27.166667%; }
+    width: 27.167%; }
   .group .span-8 {
-    width: 31.333333%; }
+    width: 31.333%; }
   .group .span-9 {
     width: 35.5%; }
   .group .span-10 {
-    width: 39.666667%; }
+    width: 39.667%; }
   .group .span-11 {
-    width: 43.833333%; }
+    width: 43.833%; }
   .group .span-12 {
     width: 48%; }
   .group .span-13 {
-    width: 52.166667%; }
+    width: 52.167%; }
   .group .span-14 {
-    width: 56.333333%; }
+    width: 56.333%; }
   .group .span-15 {
     width: 60.5%; }
   .group .span-16 {
-    width: 64.666667%; }
+    width: 64.667%; }
   .group .span-17 {
-    width: 68.833333%; }
+    width: 68.833%; }
   .group .span-18 {
     width: 73%; }
   .group .span-19 {
-    width: 77.166667%; }
+    width: 77.167%; }
   .group .span-20 {
-    width: 81.333333%; }
+    width: 81.333%; }
   .group .span-21 {
     width: 85.5%; }
   .group .span-22 {
-    width: 89.666667%; }
+    width: 89.667%; }
   .group .span-23 {
-    width: 93.833333%; }
+    width: 93.833%; }
   .group [class^="span-"] {
-    margin: 1%;
     float: left; } }

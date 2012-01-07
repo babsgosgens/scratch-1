@@ -9,13 +9,13 @@ $grid-width:		100%;
 $columns:			24;
 // Margins, both left and right, value doubles when totalled
 // If set to 0, group-width value left with $grid-width value. Broken.
-$margins:			4%;
+$margins:			1%;
 // Gutter total width, divide by for left, right margins
 $gutter:			1%;
 // Row container after margins subtracted
 $group-width:		$grid-width - $margins * 2;
 
-// BUG: class="span-$column" doesn't acquire style
+// TODO: Go to em measurements
 // TODO: still need to consider offseting columns.
 // TODO: RTL, float: right instead
 // TODO: Add other Media Queries
@@ -26,23 +26,17 @@ $group-width:		$grid-width - $margins * 2;
 	margin: 0 auto;
 	width: $group-width;
 	background: #ddd; // testing
-	// all should be span-24 or smth, since on mobile not floating  - good point Torkil. :)
-	@for $n from 1 to $columns {
-		.span-#{$n} {
-			width: 100% - $margins * 2;
-			margin: $margins;
-		}
-	}
 	// This is cheating, I am sure there is a better way
 	[class^="span-"] {
-			background: $gray5;
-			text-align: center; // testing
+		margin: $margins;
+		background: $gray5;
+		text-align: center; // testing
 	}
 }
 
 // We're not in Mobile anymore Toto [Thanks for the name spelling correction, @HarryB]
 
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 57em) {
 	.group {
 		// Add margins
 		@for $n from 1 to $columns {
@@ -52,7 +46,6 @@ $group-width:		$grid-width - $margins * 2;
 		}
 		// This is cheating, I am sure there is a better way
 		[class^="span-"] {
-			margin: $gutter;
 			float: left;
 		}
 	}
