@@ -1,8 +1,5 @@
 <?php include("includes/top.php"); ?>
 
-	<!-- baseline grid checker -->
-	<?php include("includes/typogrid-check.php"); ?>
-
 	<!-- start styleguide -->
 
 	<div id="container">
