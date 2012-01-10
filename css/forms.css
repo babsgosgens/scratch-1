@@ -163,7 +163,7 @@ form.custom div.custom.dropdown {
     color: #fff; }
 form.custom:hover a.selector {
   background-position: -14px -26px; }
-form.custom:hover.open ul {
+form.custom.open ul {
   display: block; }
-form.custom:hover.open a.selector {
+form.custom.open a.selector {
   background-position: -14px -26px; }
