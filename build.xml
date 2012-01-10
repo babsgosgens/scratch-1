@@ -1,0 +1,8 @@
+<project name="Scratch">
+
+	<!-- Clone git repos of tools used -->
+
+	<!-- Copy files from tools to their new home-->
+	<copy file="humans.txt" todir="includes" overwrite="Yes" />
+
+</project>
