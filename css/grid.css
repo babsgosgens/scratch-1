@@ -11,56 +11,105 @@
   width: 98%;
   background: #ddd; }
   .group [class^="span-"] {
-    margin: 1%;
     background: #f2f2f2;
     text-align: center; }
 
 @media only screen and (min-width: 57em) {
   .group .span-1 {
-    width: 2.167%; }
+    width: -1.833333%;
+    margin: 2%;
+    padding: 1%; }
   .group .span-2 {
-    width: 6.333%; }
+    width: 2.333333%;
+    margin: 2%;
+    padding: 1%; }
   .group .span-3 {
-    width: 10.5%; }
+    width: 6.5%;
+    margin: 2%;
+    padding: 1%; }
   .group .span-4 {
-    width: 14.667%; }
+    width: 10.666667%;
+    margin: 2%;
+    padding: 1%; }
   .group .span-5 {
-    width: 18.833%; }
+    width: 14.833333%;
+    margin: 2%;
+    padding: 1%; }
   .group .span-6 {
-    width: 23%; }
+    width: 19%;
+    margin: 2%;
+    padding: 1%; }
   .group .span-7 {
-    width: 27.167%; }
+    width: 23.166667%;
+    margin: 2%;
+    padding: 1%; }
   .group .span-8 {
-    width: 31.333%; }
+    width: 27.333333%;
+    margin: 2%;
+    padding: 1%; }
   .group .span-9 {
-    width: 35.5%; }
+    width: 31.5%;
+    margin: 2%;
+    padding: 1%; }
   .group .span-10 {
-    width: 39.667%; }
+    width: 35.666667%;
+    margin: 2%;
+    padding: 1%; }
   .group .span-11 {
-    width: 43.833%; }
+    width: 39.833333%;
+    margin: 2%;
+    padding: 1%; }
   .group .span-12 {
-    width: 48%; }
+    width: 44%;
+    margin: 2%;
+    padding: 1%; }
   .group .span-13 {
-    width: 52.167%; }
+    width: 48.166667%;
+    margin: 2%;
+    padding: 1%; }
   .group .span-14 {
-    width: 56.333%; }
+    width: 52.333333%;
+    margin: 2%;
+    padding: 1%; }
   .group .span-15 {
-    width: 60.5%; }
+    width: 56.5%;
+    margin: 2%;
+    padding: 1%; }
   .group .span-16 {
-    width: 64.667%; }
+    width: 60.666667%;
+    margin: 2%;
+    padding: 1%; }
   .group .span-17 {
-    width: 68.833%; }
+    width: 64.833333%;
+    margin: 2%;
+    padding: 1%; }
   .group .span-18 {
-    width: 73%; }
+    width: 69%;
+    margin: 2%;
+    padding: 1%; }
   .group .span-19 {
-    width: 77.167%; }
+    width: 73.166667%;
+    margin: 2%;
+    padding: 1%; }
   .group .span-20 {
-    width: 81.333%; }
+    width: 77.333333%;
+    margin: 2%;
+    padding: 1%; }
   .group .span-21 {
-    width: 85.5%; }
+    width: 81.5%;
+    margin: 2%;
+    padding: 1%; }
   .group .span-22 {
-    width: 89.667%; }
+    width: 85.666667%;
+    margin: 2%;
+    padding: 1%; }
   .group .span-23 {
-    width: 93.833%; }
+    width: 89.833333%;
+    margin: 2%;
+    padding: 1%; }
+  .group .span-24 {
+    width: 94%;
+    margin: 2%;
+    padding: 1%; }
   .group [class^="span-"] {
     float: left; } }

@@ -56,7 +56,7 @@
 			</aside>
 		</section>
 
-		<footer class="group rtl">
+		<footer class="group">
 			<article class="span-6">
 				6
 			</article>
@@ -64,4 +64,11 @@
 				18
 			</aside>
 		</footer>
+
+		<footer class="group">
+			<article class="span-24">
+				24
+			</article>
+		</footer>
+
 <?php include("includes/bottom.php"); ?>

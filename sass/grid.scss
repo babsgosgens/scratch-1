@@ -10,8 +10,10 @@ $columns:			24;
 // Margins, both left and right, value doubles when totalled
 // If set to 0, group-width value left with $grid-width value. Broken.
 $margins:			1%;
+// Span padding
+$padding: 			1%;
 // Gutter total width, divide by for left, right margins
-$gutter:			1%;
+$gutter:			2%;
 // Row container after margins subtracted
 $group-width:		$grid-width - $margins * 2;
 
@@ -26,9 +28,7 @@ $group-width:		$grid-width - $margins * 2;
 	margin: 0 auto;
 	width: $group-width;
 	background: #ddd; // testing
-	// This is cheating, I am sure there is a better way
 	[class^="span-"] {
-		margin: $margins;
 		background: $gray5;
 		text-align: center; // testing
 	}
@@ -39,12 +39,13 @@ $group-width:		$grid-width - $margins * 2;
 @media only screen and (min-width: 57em) {
 	.group {
 		// Add margins
-		@for $n from 1 to $columns {
-			.span-#{$n} {
-				width: ((100%) / $columns) * $n - $gutter * 2;
+		@for $i from 1 through $columns {
+			.span-#{$i} {
+				width: 100% / $columns * $i - $gutter * 2 - $padding * 2;
+				margin: $gutter;
+				padding: $padding;
 			}
 		}
-		// This is cheating, I am sure there is a better way
 		[class^="span-"] {
 			float: left;
 		}
