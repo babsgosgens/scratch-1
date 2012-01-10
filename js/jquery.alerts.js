@@ -1,11 +1,11 @@
 $(function() {
 
 	$('a.close').click(function() {
-			if ($('div.alert-box').hasClass("slide")) {
-			$(this).closest('.alert-box').slideUp();
+		if ($('div.alert-box').hasClass('slide')) {
+			$(this).parent('.alert-box').slideUp();
 		}
-		else if ($('div.alert-box')) {
-			$(this).closest('.alert-box').fadeOut();
+		else if ($(this)) {
+			$(this).parent('.alert-box').fadeOut();
 		}
 		return false;
 	});
