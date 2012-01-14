@@ -3,6 +3,6 @@
 	<!-- Clone git repos of tools used -->
 
 	<!-- Copy files from tools to their new home-->
-	<copy file="humans.txt" todir="includes" overwrite="Yes" />
+	<copy file="_assets/yepnope.js/yepnope.1.0.2-min.js" todir="js" overwrite="Yes" />
 
 </project>
