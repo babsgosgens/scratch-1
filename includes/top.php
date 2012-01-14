@@ -11,22 +11,9 @@
 		<!-- NOTE: Uncomment to force Chrome frame for IE or simply delete
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		-->
-
-		<!-- from Foundation build script -->
-		<!-- Combine and Compress These CSS Files -->
-		<link rel="stylesheet" href="css/testing.css">
-		<link rel="stylesheet" href="css/resets.css">
-		<link rel="stylesheet" href="css/grid.css">
-		<link rel="stylesheet" href="css/forms.css">
-		<link rel="stylesheet" href="css/alert.css">
-		<link rel="stylesheet" href="css/button.css">
-		<link rel="stylesheet" href="css/nav.css">
-		<link rel="stylesheet" href="css/pagination.css">
-		<link rel="stylesheet" href="css/tabs.css">
-		<script type="text/javascript" charset="utf-8" src="js/modernizr.custom.mq.js"></script>
-		<link rel="stylesheet" href="css/screen.css">
-		<!-- End Combine and Compress These CSS Files -->
-		<!-- <link rel="stylesheet" href="../stylesheets/all.css?v=2"> -->
+		<link rel="stylesheet" href="css/all.css?v=2">
+		<!-- yepnope, for when necessary: conditional loads or large amounts of js files
+		<script type="text/javascript" charset="utf-8" src="js/yepnope.1.0.2-min.js"></script> -->
 
 		<!-- NOTE: Plan on supporting IE lt 9 beyond serving it content? Or fight the good fight and delete it. -->
 		<!--[if lt IE 9]>

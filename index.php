@@ -1,4 +1,5 @@
 <?php include("includes/top.php"); ?>
+<?php include("widgets/alert.php"); ?>
 
 	<!-- start styleguide -->
 
@@ -71,7 +72,7 @@
 			</select>
 			<label for="message">Message</label><textarea name="message" id="message"></textarea>
 		</fieldset>
-		<button type="submit" name="submit" id="submit">Submit</button> <a class="button rounded box-shadow" href="#">anchor button</a>
+		<button type="submit" name="submit" id="submit" class="pink">Hot Pink Button</button> <button type="submit" name="submit" id="submit" class="white">White Button</button> <a class="button rounded box-shadow black" href="#">Anchor Button</a> 
 	</form>
 
 	<table>
