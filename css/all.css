@@ -89,10 +89,6 @@ a {
     color: #cc0044; }
   a:hover {
     color: #cc0044; }
-  a:focus {
-    outline: thin solid; }
-  a:hover, a:active {
-    outline: 0; }
 
 address, blockquote, cite, em, i, q, mark {
   font-style: italic; }
@@ -100,12 +96,8 @@ address, blockquote, cite, em, i, q, mark {
 blockquote, q {
   font-family: "Times New Roman", Georgia, serif;
   color: #ff0055; }
-
-blockquote:before, blockquote.microcf:after, blockquote.group:after, blockquote:after,
-q:before,
-q.microcf:after,
-q.group:after, q:after {
-  content: ''; }
+  blockquote:before, blockquote.microcf:after, blockquote.group:after, blockquote:after, q:before, q.microcf:after, q.group:after, q:after {
+    content: ''; }
 
 dl dt, mark {
   font-weight: bold; }
@@ -141,13 +133,10 @@ ul li {
 
 ol li {
   list-style-type: decimal; }
-
 ol ol li {
   list-style: upper-alpha; }
-
 ol ol ol li {
   list-style: lower-roman; }
-
 ol ol ol ol li {
   list-style: lower-alpha; }
 
@@ -156,7 +145,7 @@ hr {
   margin-top: -1px;
   padding: 0;
   border: 0;
-  border-top: 1px solid #cccccc; }
+  border-top: 1px solid #ff0055; }
 
 input, select {
   vertical-align: middle; }
@@ -224,10 +213,9 @@ p.wrapped {
 div.alert-box {
   position: relative;
   display: block;
-  margin: 3em;
-  padding: 18px 7px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  background: #666666;
+  margin: 1.5em;
+  padding: 1.5em .5em;
+  background: #ff0055;
   font-weight: bold;
   text-align: center;
   color: white; }
@@ -252,9 +240,10 @@ div.alert-box {
     text-decoration: none;
     color: white; }
     div.alert-box a.close:hover {
-      color: #cccccc; }
+      color: rgba(255, 255, 255, 0.8); }
 
 a.button, input.button, button {
+  display: inline-block;
   padding-top: 0.75em;
   padding-left: 1.5em;
   padding-bottom: 0.75em;
@@ -267,7 +256,7 @@ a.button, input.button, button {
   -ms-border-radius: 3px;
   border-radius: 3px;
   color: white;
-  font-size: 1.25em;
+  font-size: 16px;
   font-weight: bold;
   text-decoration: none; }
   a.button.pink, input.button.pink, button.pink {
@@ -286,8 +275,8 @@ a.button, input.button, button {
       background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, #262626, #1a1a1a); }
   a.button.white, input.button.white, button.white {
     background: white;
-    background-image: -moz-linear-gradient(100% 100% 90deg, #f2f2f2, white);
-    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, white, #f2f2f2);
+    background-image: -moz-linear-gradient(100% 100% 90deg, #ededed, white);
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, white, #ededed);
     color: #666666; }
     a.button.white:hover, input.button.white:hover, button.white:hover {
       background-image: -moz-linear-gradient(100% 100% 90deg, #f2f2f2, white);

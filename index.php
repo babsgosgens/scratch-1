@@ -22,8 +22,20 @@
 		Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.
 		</p>
 	</div>
-	<a href="#">anchor</a>
 	<hr />
+	<nav>
+		<ul>
+			<li>
+				<a href="#">anchor 1</a>
+			</li>
+			<li>
+				<a href="#">anchor 2</a>
+			</li>
+			<li>
+				<a href="#">anchor 3</a>
+			</li>
+		</ul>
+	</nav>
 	<ul>
 		<li>
 		ul item one
@@ -72,7 +84,7 @@
 			</select>
 			<label for="message">Message</label><textarea name="message" id="message"></textarea>
 		</fieldset>
-		<button type="submit" name="submit" id="submit" class="pink">Hot Pink Button</button> <button type="submit" name="submit" id="submit" class="white">White Button</button> <a class="button rounded box-shadow black" href="#">Anchor Button</a> 
+		<button type="submit" name="submit" id="submit" class="pink">Hot Pink Button</button> <input type="submit" name="submit" value="White Button" id="submit" class="button white"> <a class="button rounded box-shadow black" href="#">Anchor Button</a>
 	</form>
 
 	<table>

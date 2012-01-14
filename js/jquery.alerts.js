@@ -7,7 +7,7 @@ $(function() {
 		} else {
 			$target.parent('.alert-box').fadeOut();
 		}
-		return false;
+		e.preventDefault();
 	});
 
 });

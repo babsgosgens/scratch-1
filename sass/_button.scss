@@ -1,4 +1,5 @@
 a.button, input.button, button {
+	display: inline-block;
 	padding-top: $baseLine / 2;
 	padding-left: $baseLine;
 	padding-bottom: $baseLine / 2;
@@ -7,7 +8,7 @@ a.button, input.button, button {
 	border: 1px solid $gray5;
 	@include radius;
 	color: $white;
-	font-size: 1.25em;
+	font-size: $basefont;
 	font-weight: bold;
 	text-decoration: none;
 	// NOTE: make into mixin with args
@@ -31,8 +32,8 @@ a.button, input.button, button {
 	}
 	&.white{
 		background: $white;
-		background-image: -moz-linear-gradient(100% 100% 90deg, $gray5, $white);
-		background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, $white, $gray5);
+		background-image: -moz-linear-gradient(100% 100% 90deg, darken($gray5, 2), $white);
+		background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, $white, darken($gray5, 2));
 		color: $gray60;
 		&:hover {
 			background-image: -moz-linear-gradient(100% 100% 90deg, $gray5, $white);

@@ -3,10 +3,9 @@
 div.alert-box {
 	position: relative;
 	display: block;
-	margin: 3em;
-	padding: 18px 7px;
-	border: 1px solid rgba(0,0,0,0.1);
-	background: $gray60;
+	margin: 1.5em;
+	padding: 1.5em .5em;
+	background: $hotpink;
 	font-weight: bold;
 	text-align: center;
 	color: $white;
@@ -35,7 +34,7 @@ div.alert-box {
 		text-decoration: none;
 		color: $white;
 		&:hover {
-			color: $gray20;
+			color: transparentize($white, .2);
 		}
 	}
 }

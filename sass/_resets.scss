@@ -79,24 +79,20 @@ a {
 		color: $hotpinkAccent;
 	}
 	&:focus {
-		outline: thin solid;
 	}
 	&:hover, &:active {
-		outline: 0;
 	}
 }
-
 
 address, blockquote, cite, em, i, q, mark {
     font-style: italic
 }
 blockquote, q {
     font-family: "Times New Roman", Georgia, serif;
-    color: $hotpink
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-    content: '';
+    color: $hotpink;
+	&:before, &:after {
+    	content: '';
+	}
 }
 dl {}
 dl dt, mark {
@@ -135,24 +131,26 @@ ul, ol {
 ul li {
 	list-style-type: none
 }
-ol li {
-	list-style-type: decimal
-}
-ol ol li {
-	list-style: upper-alpha
-}
-ol ol ol li {
-	list-style: lower-roman
-}
-ol ol ol ol li {
-	list-style: lower-alpha
+ol {
+	li {
+		list-style-type: decimal
+	}
+	ol li {
+		list-style: upper-alpha
+	}
+	ol ol li {
+		list-style: lower-roman
+	}
+	ol ol ol li {
+		list-style: lower-alpha
+	}
 }
 hr {
     display: block;
     margin-top: -1px;
     padding: 0;
     border: 0;
-    border-top: 1px solid #ccc
+    border-top: 1px solid $hotpink
 }
 
 input, select {
