@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<!-- Shout out to Simon Bailey for inspiration, https://github.com/newtriks/Ant-Funk -->
+<project>
+	<macrodef name="git">
+		<attribute name="cmd" />
+		<attribute name="options" default="" />
+		<attribute name="failerror" default="false" />
+		<element name="args" optional="true" />
+		<sequential>
+			<echo message="git @{cmd}" />
+			<exec executable="git" failonerror="@{failerror}">
+				<arg line="@{cmd} @{options}" />
+				<args />
+			</exec>
+		</sequential>
+	</macrodef>
+
+	<macrodef name="git-submodule">
+		<attribute name="repository" />
+		<attribute name="destination" />
+		<attribute name="options" default="" />
+		<attribute name="failerror" default="false" />
+		<sequential>
+			<git cmd="submodule add" options="@{options}" failerror="@{failerror}" >
+				<args>
+					<arg value="@{repository}" />
+					<arg value="${dir.sm}/@{destination}" />
+				</args>
+			</git>
+		</sequential>
+	</macrodef>
+
+	<macrodef name="git-pull">
+		<attribute name="repository" />
+		<attribute name="options" default="-" />
+		<attribute name="failerror" default="false" />
+		<sequential>
+			<git cmd="pull" options="@{options}" failerror="@{failerror}" >
+				<args>
+					<!-- once task created move this there, maybe -->
+					<arg value="--recurse-submodules" />
+				</args>
+			</git>
+		</sequential>
+	</macrodef>
+</project>
