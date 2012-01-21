@@ -1,0 +1,11 @@
+@import "compass/layout/grid-background";
+
+body {
+	@include baseline-grid-background(1.5em, #ddd);
+}
+
+// just for legibility
+#container {
+	margin: 0 auto;
+	width:  80%;
+}
