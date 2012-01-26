@@ -1,4 +1,4 @@
-Acknowledgements
+Acknowledgements & Big Ups
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -32,3 +32,9 @@ SASS | CSS:
 		alerts.sass
 		tabs.sass
 		pagination.sass
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Modern Pictograms font: John Caserta, http://thedesignoffice.org/project/modern-pictograms/ 
+
+Uniform JS: uniformjs.com
