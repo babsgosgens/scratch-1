@@ -1,7 +1,7 @@
 @import "compass/layout/grid-background";
 
 body {
-	@include baseline-grid-background(1.5em, #ddd);
+	@include baseline-grid-background(#{$baseLine}, #ddd);
 }
 
 // just for legibility
