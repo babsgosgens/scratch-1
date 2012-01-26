@@ -44,27 +44,24 @@ time, mark, audio, video, a, hr {
 /* 	Typography
 ****************************************/
 
-html {
-	font-size: $basefont; /* base font-size */
-}
 body {
-	font: normal 100%/1.5 "Helvetica", Arial, sans-serif; /* base line-height */
+	font: normal #{$basefont}/#{$baseLine} "Helvetica", Arial, sans-serif; /* base line-height */
 	color: $gray90;
 }
 h1 {
-	@include heading(1.5em, 1em)
+	@include heading(1.5em)
 }
 h2 {
-	@include heading(1.4em, 1.071428em)
+	@include heading(1.4em)
 }
 h3 {
-	@include heading(1.3em, 1.153846em)
+	@include heading(1.3em)
 }
 h4, blockquote {
-	@include heading(1.2em, 1.25em)
+	@include heading(1.2em)
 }
 h5 {
-	@include heading(1.1em, 1.363636em)
+	@include heading(1.1em)
 }
 h1, h2, h3, h4, h5, h6, b, strong {
 	font-weight: bold
@@ -75,12 +72,8 @@ a {
 	&:visited {
 		color: $hotpinkAccent;
 	}
-	&:hover {
+	&:hover, &:focus, &:active {
 		color: $hotpinkAccent;
-	}
-	&:focus {
-	}
-	&:hover, &:active {
 	}
 }
 
@@ -184,9 +177,16 @@ tfoot {
 
 /* Forms */
 
-input {
-	
+label {
+	font-weight: bold;
+	color: #555;
+	display: block;
+	margin-bottom: .5em;
+	input {
+		display: block
+	}
 }
+
 input:focus {
  
 }
