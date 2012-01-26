@@ -67,22 +67,29 @@
 	<hr />
 	<form class="forms">
 		<fieldset>
-			<label for="name">Name</label><input type="text"name="name" id="name" />
-			<label for="email">Email</label><input type="text" name="email" id="email" />
-			<label for="city">City</label><input type="text" name="city" id="city" />
-			<label for="state">State</label><input type="text" name="state" id="state" />
-			<label for="zip">Zip</label><input type="text" name="zip" id="zip" />
-			<label>Sign Up for the Following</label>
-			<input type="checkbox" name="info1" id="info1" /><label for="info1">Information 1</label>
-			<input type="checkbox" name="info2" id="info2" /><label for="info2">Information 2</label>
-			<input type="checkbox" name="info3" id="info3" /><label for="info3">Information 3</label>
+			<legend>Inputs: Text</legend>
+			<label for="name">Name<input type="text" name="name" id="name" /></label>
+			<label for="email">Email<input type="email" name="email" id="email" /></label>
+			<label for="city">City<input type="text" name="city" id="city" /></label>
+			<label for="state">State<input type="text" name="state" id="state" /></label>
+			<label for="zip">Zip<input type="text" name="zip" id="zip" /></label>
+			<legend>Checkbox</legend>
+				<label for="info1"><input type="checkbox" name="info1" id="info1" /> Check 1</label>
+				<label for="info2"><input type="checkbox" name="info2" id="info2" /> Check 2</label>
+				<label for="info3"><input type="checkbox" name="info3" id="info3" /> Check 3</label>
+			<legend>Radio</legend>
+				<label for="info1"><input type="radio" name="info1" id="radio1" /> Radio 1</label>
+				<label for="info2"><input type="radio" name="info2" id="radio2" /> Radio 2</label>
+				<label for="info3"><input type="radio" name="info3" id="radio3" /> Radio 3</label>
+			<legend>Selectbox</legend>
 			<select>
 				<option value="volvo">Volvo</option>
 				<option value="saab">Saab</option>
 				<option value="mercedes">Mercedes</option>
 				<option value="audi">Audi</option>
 			</select>
-			<label for="message">Message</label><textarea name="message" id="message"></textarea>
+			<legend>Textarea</legend>
+			<label for="message">Message<textarea name="message" id="message"></textarea></label>
 		</fieldset>
 		<button type="submit" name="submit" id="submit" class="pink">Hot Pink Button</button> <input type="submit" name="submit" value="White Button" id="submit" class="button white"> <a class="button rounded box-shadow black" href="#">Anchor Button</a>
 	</form>
