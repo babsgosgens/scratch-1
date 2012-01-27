@@ -51,7 +51,7 @@ html {
   /* base font-size */ }
 
 body {
-  font: normal 100%/1.5 "Helvetica", Arial, sans-serif;
+  font: normal 100%/1.5em "Helvetica", Arial, sans-serif;
   /* base line-height */
   color: #1a1a1a; }
 
@@ -87,7 +87,7 @@ a {
   color: #ff0055; }
   a:visited {
     color: #cc0044; }
-  a:hover {
+  a:hover, a:focus {
     color: #cc0044; }
 
 address, blockquote, cite, em, i, q, mark {
@@ -263,14 +263,14 @@ a.button, input.button, button {
     background: #ff0055;
     background-image: -moz-linear-gradient(100% 100% 90deg, #cc0044, #ff0055);
     background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, #ff0055, #cc0044); }
-    a.button.pink:hover, input.button.pink:hover, button.pink:hover {
+    a.button.pink:hover, a.button.pink:focus, input.button.pink:hover, input.button.pink:focus, button.pink:hover, button.pink:focus {
       background-image: -moz-linear-gradient(100% 100% 90deg, #db0049, #ff0f5f);
       background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, #ff0f5f, #db0049); }
   a.button.black, input.button.black, button.black {
     background: black;
     background-image: -moz-linear-gradient(100% 100% 90deg, #080808, #212121);
     background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, #212121, #080808); }
-    a.button.black:hover, input.button.black:hover, button.black:hover {
+    a.button.black:hover, a.button.black:focus, input.button.black:hover, input.button.black:focus, button.black:hover, button.black:focus {
       background-image: -moz-linear-gradient(100% 100% 90deg, #1a1a1a, #262626);
       background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, #262626, #1a1a1a); }
   a.button.white, input.button.white, button.white {
@@ -278,7 +278,7 @@ a.button, input.button, button {
     background-image: -moz-linear-gradient(100% 100% 90deg, #ededed, white);
     background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, white, #ededed);
     color: #666666; }
-    a.button.white:hover, input.button.white:hover, button.white:hover {
+    a.button.white:hover, a.button.white:focus, input.button.white:hover, input.button.white:focus, button.white:hover, button.white:focus {
       background-image: -moz-linear-gradient(100% 100% 90deg, #f2f2f2, white);
       background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, white, #f2f2f2); }
 

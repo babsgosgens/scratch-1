@@ -9,6 +9,9 @@ div.alert-box {
 	font-weight: bold;
 	text-align: center;
 	color: $white;
+	p {
+		margin: 0 3em;
+	}
 	&.slide {
 		margin: 0;
 	}
@@ -33,8 +36,9 @@ div.alert-box {
 		line-height: 45px;
 		text-decoration: none;
 		color: $white;
-		&:hover {
+		&:hover, &:focus {
 			color: transparentize($white, .2);
 		}
 	}
 }
+

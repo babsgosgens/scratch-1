@@ -48,7 +48,7 @@ html {
 	font-size: $basefont; /* base font-size */
 }
 body {
-	font: normal 100%/1.5 "Helvetica", Arial, sans-serif; /* base line-height */
+	font: normal 100%/#{$baseLine} "Helvetica", Arial, sans-serif; /* base line-height */
 	color: $gray90;
 }
 h1 {
@@ -75,12 +75,12 @@ a {
 	&:visited {
 		color: $hotpinkAccent;
 	}
-	&:hover {
+	&:hover, &:focus {
 		color: $hotpinkAccent;
 	}
 	&:focus {
 	}
-	&:hover, &:active {
+	&:hover, &:focus, &:active {
 	}
 }
 
@@ -187,8 +187,9 @@ tfoot {
 input {
 	
 }
-input:focus {
- 
+input {
+	&:hover, &:focus {
+	}
 }
 
 /* Img alignment */
