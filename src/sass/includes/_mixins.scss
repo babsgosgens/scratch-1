@@ -20,10 +20,10 @@
 	font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif
 }
 
-@mixin heading($font-size, $line-height) {
+@mixin heading($font-size) {
 	font-size: $font-size;
-	line-height: $line-height;
-	margin-bottom: $line-height
+	line-height: $baseLine/$font-size;
+	margin-bottom: $baseLine/$font-size
 }
 
 @mixin box-shadow {
@@ -42,8 +42,23 @@
 	border-radius: 3px;
 }
 
-// NOTE: add args
-@mixin gradient {
-	background-image: -moz-linear-gradient(100% 100% 90deg, #ddd, white);
-	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(white), to(#ddd));
+@mixin gradient($bg, $top, $bottom) {
+	background: $bg;
+	background: -moz-linear-gradient(top, $top 0%, $bottom 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$top), color-stop(100%, $bottom));
+	background: -webkit-linear-gradient(top,  $top 0%, $bottom 100%);
+	background: -o-linear-gradient(top,  $top 0%, $bottom 100%);
+	background: -ms-linear-gradient(top,  $top 0%, $bottom 100%);
+	background: linear-gradient(top,  $top 0%, $bottom 100%);
+	//filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$top', endColorstr='$bottom',GradientType=0 );
+	&:hover, &:focus {
+		background: $bg;
+		background: -moz-linear-gradient(top,  lighten($top, 3) 0%, lighten($bottom, 3) 100%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,lighten($top, 3)), color-stop(100%,lighten($bottom, 3)));
+		background: -webkit-linear-gradient(top,  lighten($top, 3) 0%, lighten($bottom, 3) 100%);
+		background: -o-linear-gradient(top,  $top 0%, $bottom 100%);
+		background: -ms-linear-gradient(top,  $top 0%, $bottom 100%);
+		background: linear-gradient(top,  $top 0%, $bottom 100%);
+		//filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='lighten($top, 3)', endColorstr='lighten($bottom, 3)',GradientType=0 );
+	}
 }
