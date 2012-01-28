@@ -22,8 +22,8 @@
 
 @mixin heading($font-size) {
 	font-size: $font-size;
-	line-height: $baseLine/$font-size;
-	margin-bottom: $baseLine/$font-size
+	line-height: ($baseLine / $font-size)+em;
+	margin-bottom: ($baseLine / $font-size)+em
 }
 
 @mixin box-shadow {
@@ -52,7 +52,7 @@
 	background: linear-gradient(top,  $top 0%, $bottom 100%);
 	//filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$top', endColorstr='$bottom',GradientType=0 );
 	&:hover, &:focus {
-		background: $bg;
+		background: lighten($bg, 3);
 		background: -moz-linear-gradient(top,  lighten($top, 3) 0%, lighten($bottom, 3) 100%);
 		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,lighten($top, 3)), color-stop(100%,lighten($bottom, 3)));
 		background: -webkit-linear-gradient(top,  lighten($top, 3) 0%, lighten($bottom, 3) 100%);
