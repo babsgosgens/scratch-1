@@ -53,43 +53,45 @@ body {
 
 h1 {
   font-size: 1.5em;
-  line-height: 1;
-  margin-bottom: 1; }
+  line-height: 1em;
+  margin-bottom: 1em; }
 
 h2 {
   font-size: 1.4em;
-  line-height: 1.071429;
-  margin-bottom: 1.071429; }
+  line-height: 1.071429em;
+  margin-bottom: 1.071429em; }
 
 h3 {
   font-size: 1.3em;
-  line-height: 1.153846;
-  margin-bottom: 1.153846; }
+  line-height: 1.153846em;
+  margin-bottom: 1.153846em; }
 
 h4, blockquote {
   font-size: 1.2em;
-  line-height: 1.25;
-  margin-bottom: 1.25; }
+  line-height: 1.25em;
+  margin-bottom: 1.25em; }
 
 h5 {
   font-size: 1.1em;
-  line-height: 1.363636;
-  margin-bottom: 1.363636; }
+  line-height: 1.363636em;
+  margin-bottom: 1.363636em; }
 
 h1, h2, h3, h4, h5, h6, b, strong {
   font-weight: bold; }
 
 a {
-  color: #ff0055; }
+  color: #ff0064; }
+  a:visited {
+    color: #cc0050; }
   a:hover, a:focus, a:active {
-    color: #cc0044; }
+    color: #cc0050; }
 
 address, blockquote, cite, em, i, q, mark {
   font-style: italic; }
 
 blockquote, q {
   font-family: "Times New Roman", Georgia, serif;
-  color: #ff0055; }
+  color: #ff0064; }
   blockquote:before, blockquote.microcf:after, blockquote.group:after, blockquote:after, q:before, q.microcf:after, q.group:after, q:after {
     content: ''; }
 
@@ -139,7 +141,7 @@ hr {
   margin-top: -1px;
   padding: 0;
   border: 0;
-  border-top: 1px solid #ff0055; }
+  border-top: 1px solid #ff0064; }
 
 input, select {
   vertical-align: middle; }
@@ -216,13 +218,16 @@ div.alert-box {
   position: relative;
   display: block;
   margin: 1.5em;
-  padding: 1.5em .5em;
-  background: #ff0055;
+  padding: 1.5em;
+  background: #ff0064;
   font-weight: bold;
   text-align: center;
   color: white; }
+  div.alert-box p {
+    margin: 0 1.5em; }
   div.alert-box.slide {
-    margin: 0; }
+    margin: 0;
+    margin-bottom: 1.5em; }
   div.alert-box.success {
     background-color: #7fae00;
     text-shadow: 0 -1px rgba(0, 0, 0, 0.3); }
@@ -234,14 +239,13 @@ div.alert-box {
     text-shadow: 0 -1px rgba(0, 0, 0, 0.3); }
   div.alert-box a.close {
     position: absolute;
-    right: 4px;
+    right: 0.375em;
     top: 0px;
-    padding: 4px;
-    font-size: 18px;
-    line-height: 45px;
+    padding: 0.375em;
+    font-size: 1.25em;
     text-decoration: none;
     color: white; }
-    div.alert-box a.close:hover {
+    div.alert-box a.close:hover, div.alert-box a.close:focus {
       color: rgba(255, 255, 255, 0.8); }
 
 /*
@@ -766,22 +770,22 @@ a.button, input.button, button {
   text-decoration: none;
   vertical-align: baseLine; }
   a.button.pink, input.button.pink, button.pink {
-    background: #ff0055;
-    background: -moz-linear-gradient(top, #ff0055 0%, #cc0044 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ff0055), color-stop(100%, #cc0044));
-    background: -webkit-linear-gradient(top, #ff0055 0%, #cc0044 100%);
-    background: -o-linear-gradient(top, #ff0055 0%, #cc0044 100%);
-    background: -ms-linear-gradient(top, #ff0055 0%, #cc0044 100%);
-    background: linear-gradient(top, #ff0055 0%, #cc0044 100%);
-    border: 1px solid #cc0044; }
-    a.button.pink:hover, input.button.pink:hover, button.pink:hover {
-      background: #ff0055;
-      background: -moz-linear-gradient(top, #ff0f5f 0%, #db0049 100%);
-      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ff0f5f), color-stop(100%, #db0049));
-      background: -webkit-linear-gradient(top, #ff0f5f 0%, #db0049 100%);
-      background: -o-linear-gradient(top, #ff0055 0%, #cc0044 100%);
-      background: -ms-linear-gradient(top, #ff0055 0%, #cc0044 100%);
-      background: linear-gradient(top, #ff0055 0%, #cc0044 100%); }
+    background: #ff0064;
+    background: -moz-linear-gradient(top, #ff0064 0%, #cc0050 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ff0064), color-stop(100%, #cc0050));
+    background: -webkit-linear-gradient(top, #ff0064 0%, #cc0050 100%);
+    background: -o-linear-gradient(top, #ff0064 0%, #cc0050 100%);
+    background: -ms-linear-gradient(top, #ff0064 0%, #cc0050 100%);
+    background: linear-gradient(top, #ff0064 0%, #cc0050 100%);
+    border: 1px solid #cc0050; }
+    a.button.pink:hover, a.button.pink:focus, input.button.pink:hover, input.button.pink:focus, button.pink:hover, button.pink:focus {
+      background: #ff0f6d;
+      background: -moz-linear-gradient(top, #ff0f6d 0%, #db0056 100%);
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ff0f6d), color-stop(100%, #db0056));
+      background: -webkit-linear-gradient(top, #ff0f6d 0%, #db0056 100%);
+      background: -o-linear-gradient(top, #ff0064 0%, #cc0050 100%);
+      background: -ms-linear-gradient(top, #ff0064 0%, #cc0050 100%);
+      background: linear-gradient(top, #ff0064 0%, #cc0050 100%); }
   a.button.white, input.button.white, button.white {
     background: #f2f2f2;
     background: -moz-linear-gradient(top, white 0%, #f2f2f2 100%);
@@ -792,8 +796,8 @@ a.button, input.button, button {
     background: linear-gradient(top, #ffffff 0%, #f2f2f2 100%);
     border: 1px solid #f2f2f2;
     color: #333333; }
-    a.button.white:hover, input.button.white:hover, button.white:hover {
-      background: #f2f2f2;
+    a.button.white:hover, a.button.white:focus, input.button.white:hover, input.button.white:focus, button.white:hover, button.white:focus {
+      background: #fafafa;
       background: -moz-linear-gradient(top, white 0%, #fafafa 100%);
       background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, white), color-stop(100%, #fafafa));
       background: -webkit-linear-gradient(top, white 0%, #fafafa 100%);
@@ -809,8 +813,8 @@ a.button, input.button, button {
     background: -ms-linear-gradient(top, #333333 0%, black 100%);
     background: linear-gradient(top, #333333 0%, #000000 100%);
     border: 1px solid black; }
-    a.button.black:hover, input.button.black:hover, button.black:hover {
-      background: #333333;
+    a.button.black:hover, a.button.black:focus, input.button.black:hover, input.button.black:focus, button.black:hover, button.black:focus {
+      background: #3b3b3b;
       background: -moz-linear-gradient(top, #3b3b3b 0%, #080808 100%);
       background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #3b3b3b), color-stop(100%, #080808));
       background: -webkit-linear-gradient(top, #3b3b3b 0%, #080808 100%);
