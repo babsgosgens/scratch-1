@@ -35,6 +35,8 @@ SASS | CSS:
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Modern Pictograms font: John Caserta, http://thedesignoffice.org/project/modern-pictograms/ 
+Modern Pictograms font: Copyright (c) 2012, John Caserta (mail@johncaserta.com), http://thedesignoffice.org/project/modern-pictograms/ 
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 Uniform JS: uniformjs.com
