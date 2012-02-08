@@ -41,11 +41,9 @@ fieldset, form, label, legend,
 table, caption,
 article, aside, canvas, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section, summary,
-time, mark, audio, video, a, hr {
+time, mark, audio, video, hr {
   margin-bottom: 1.5em; }
 
-/* 	Typography
-****************************************/
 body {
   font: normal 100%/1.5em "Helvetica", Arial, sans-serif;
   /* base line-height */
@@ -92,8 +90,9 @@ address, blockquote, cite, em, i, q, mark {
 blockquote, q {
   font-family: "Times New Roman", Georgia, serif;
   color: #ff0064; }
-  blockquote:before, blockquote.microcf:after, blockquote.group:after, blockquote:after, q:before, q.microcf:after, q.group:after, q:after {
-    content: ''; }
+  blockquote:before, blockquote.microcf:after, blockquote.group:after, q:before, q.microcf:after, q.group:after {
+    font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    content: ""; }
 
 dl dt, mark {
   font-weight: bold; }
@@ -119,7 +118,6 @@ abbr[title], dfn[title], acronym {
   border-bottom: 1px dotted;
   cursor: help; }
 
-/* LISTS */
 ul, ol {
   margin: 0 0 1.5em 0;
   list-style: none; }
@@ -167,7 +165,6 @@ tr:nth-child(odd) {
 tfoot {
   font-style: italic; }
 
-/* Forms */
 label {
   font-weight: bold;
   color: #555;
@@ -176,24 +173,6 @@ label {
   label input {
     display: block; }
 
-/* Img alignment */
-img.centered, .aligncenter, div.aligncenter {
-  display: block;
-  margin-left: auto;
-  margin-right: auto; }
-
-img.alignright, img.alignleft {
-  display: inline; }
-
-.alignright {
-  float: right;
-  margin-left: 1.5em; }
-
-.alignleft {
-  float: left;
-  margin-right: 1.5em; }
-
-/* Structural */
 .cf:before, .cf.microcf:after, .cf.group:after,
 .cf:after {
   content: "";
@@ -308,7 +287,7 @@ div.uploader,
 div.uploader span.action,
 div.button,
 div.button span {
-  background-image: url(../images/sprite.png);
+  background-image: url(../images/uniform/sprite.png);
   background-repeat: no-repeat;
   -webkit-font-smoothing: antialiased; }
 
@@ -335,8 +314,8 @@ textarea.uniform {
   font-weight: normal;
   padding: 3px;
   color: #777;
-  background: url("../images/bg-input-focus.png") repeat-x 0px 0px;
-  background: url("../images/bg-input.png") repeat-x 0px 0px;
+  background: url("../images/uniform/bg-input-focus.png") repeat-x 0px 0px;
+  background: url("../images/uniform/bg-input.png") repeat-x 0px 0px;
   border-top: solid 1px #aaa;
   border-left: solid 1px #aaa;
   border-bottom: solid 1px #ccc;
@@ -354,7 +333,7 @@ textarea.uniform:focus {
   -moz-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
   border-color: #999;
-  background: url("../images/bg-input-focus.png") repeat-x 0px 0px; }
+  background: url("../images/uniform/bg-input-focus.png") repeat-x 0px 0px; }
 
 /* SPRITES */
 /* Select */
@@ -364,7 +343,7 @@ div.selector {
   height: 26px; }
 
 div.selector span {
-  background-position: right 0px;
+  background-position: right 0px, -19px -260px;
   height: 26px;
   line-height: 26px; }
 
@@ -790,7 +769,6 @@ div.uploader input {
 
 a.button, input.button, button {
   display: inline-block;
-  margin: 1.5em 0;
   padding-top: 1.5em;
   padding-left: 3em;
   padding-bottom: 1.5em;
@@ -966,6 +944,17 @@ a.button, input.button, button {
     padding: 1%; }
   .group [class^="span-"] {
     float: left; } }
+nav {
+  width: 100%;
+  background: #f2f2f2; }
+  nav ul {
+    text-align: center; }
+    nav ul li {
+      display: inline; }
+    nav ul a {
+      display: inline-block;
+      padding: 1.5em; }
+
 body {
   background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(5%, #dddddd), color-stop(5%, rgba(221, 221, 221, 0)));
   background-image: -webkit-linear-gradient(bottom, #dddddd 5%, rgba(221, 221, 221, 0) 5%);
