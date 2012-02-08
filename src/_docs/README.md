@@ -10,7 +10,8 @@ HTML Markup:
 
 SASS | CSS:
 	Patterns
-		buttons.sass
+		resets.scss
+		buttons.scss
 
 JS:
 	Patterns
