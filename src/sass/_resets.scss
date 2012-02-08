@@ -37,12 +37,12 @@ fieldset, form, label, legend,
 table, caption, 
 article, aside, canvas, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section, summary,
-time, mark, audio, video, a, hr {
+time, mark, audio, video, hr {
 	margin-bottom: $baseLine
 }
 
-/* 	Typography
-****************************************/
+// 	Typography
+////////////////////////////////
 
 body {
 	font: normal #{$basefont}/#{$baseLine} "Helvetica", Arial, sans-serif; /* base line-height */
@@ -83,8 +83,10 @@ address, blockquote, cite, em, i, q, mark {
 blockquote, q {
     font-family: "Times New Roman", Georgia, serif;
     color: $hotpink;
-	&:before, &:after {
-    	content: '';
+	&:before/*, &:after*/ {
+		//font-size: 3em;
+		@include fontStack;
+    	content: ''
 	}
 }
 dl {}
@@ -115,7 +117,8 @@ abbr[title], dfn[title], acronym {
     cursor: help
 }
 
-/* LISTS */
+// LISTS
+////////////////////////////////
 
 ul, ol {
 	margin: 0 0 $baseLine 0;
@@ -150,6 +153,9 @@ input, select {
     vertical-align: middle
 }
 
+// tables
+////////////////////////////////
+
 table {
 	width: 100%; // or not
 	border: 1px solid $gray90;
@@ -175,7 +181,8 @@ tfoot {
 	font-style: italic
 }
 
-/* Forms */
+// Forms
+////////////////////////////////
 
 label {
 	font-weight: bold;
@@ -190,26 +197,8 @@ label {
 	}
 }
 
-/* Img alignment */
-
-img.centered, .aligncenter, div.aligncenter {
-	display: block;
-	margin-left: auto;
-	margin-right: auto
-}
-img.alignright, img.alignleft {
-	display: inline
-} 
-.alignright {
-	float: right;
-	margin-left: $baseLine
-}
-.alignleft {
-	float: left;
-	margin-right: $baseLine
-}
-
-/* Structural */
+// Structural
+////////////////////////////////
 
 .cf:before,
 .cf:after {
