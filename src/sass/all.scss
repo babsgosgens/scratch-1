@@ -1,6 +1,6 @@
-@import "includes/functions";
-@import "includes/mixins";
-@import "includes/vars";
+@import "imports/functions";
+@import "imports/mixins";
+@import "imports/vars";
 @import "resets";
 @import "fontface";
 @import "screen";
@@ -9,7 +9,7 @@
 @import "button";
 //@import "forms";
 @import "grid";
-//@import "nav";
+@import "nav";
 //@import "pagination";
 //@import "tabs";
 @import "testing";
