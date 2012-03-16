@@ -11,8 +11,8 @@ $gray60:		lighten($black, 40%);
 $gray40:		lighten($black, 60%);
 $gray20:		lighten($black, 80%);
 $gray5:			lighten($black, 95%);
-$hotpink:		rgba(255,0,100,1);
-$hotpinkAccent:	darken($hotpink, 10%);
+$accent:		rgba(255,0,100,1);
+$accentDark:	darken($accent, 10%);
 
 // Letterpress
 $lp-dark:	1px 1px 1px rgba(0,0,0,.2);

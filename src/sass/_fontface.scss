@@ -36,7 +36,7 @@
 .pictograms a {
 	font: 2em/#{$baseLine} 'ModernPictogramsNormal', Helvetica, Arial, sans-serif;
 	letter-spacing: 0;
-	color: $hotpink;
+	color: $accent;
 	text-decoration: none;
 	&:hover {
 		color: $black
@@ -46,7 +46,7 @@
 .iconic a {
 	font: 2em/#{$baseLine} 'IconicStrokeRegular', Helvetica, Arial, sans-serif;
 	letter-spacing: 0;
-	color: $hotpink;
+	color: $accent;
 	text-decoration: none;
 	&:hover {
 		color: $black

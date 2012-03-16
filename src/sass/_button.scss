@@ -14,8 +14,8 @@ a.button, input.button, button {
 	vertical-align: baseLine;
 	// NOTE: make into mixin with args
 	&.pink {
-		@include gradient($hotpink, $hotpink, $hotpinkAccent);
-		border: 1px solid $hotpinkAccent
+		@include gradient($accent, $accent, $accentDark);
+		border: 1px solid $accentDark
 	}
 	&.white {
 		@include gradient($gray5, $white, $gray5);

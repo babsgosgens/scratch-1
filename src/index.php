@@ -1,9 +1,65 @@
 <?php include("_partials/top.php"); ?>
 <?php include("_partials/widgets/alert.php"); ?>
 
+<!-- begin test #container -->
+<div id="container">
+
 	<!-- start styleguide -->
 
-	<div id="container">
+	<h1>Navigation and Lists</h1>
+	<a id="toggler" class="mobile">Menu</a>
+	<nav id="global-nav" role="navigation" class="global-nav visuallyhidden microcf">
+		<ul>
+			<li>
+				<a href="#">anchor 1</a>
+			</li>
+			<li>
+				<a href="#">anchor 2</a>
+			</li>
+			<li>
+				<a href="#">anchor 3</a>
+			</li>
+		</ul>
+	</nav>
+<!-- 	<nav id="menu" class="horizontal">
+		<ul>
+			<li>
+				<a href="#">anchor 1</a>
+			</li>
+			<li>
+				<a href="#">anchor 2</a>
+			</li>
+			<li>
+				<a href="#">anchor 3</a>
+			</li>
+		</ul>
+	</nav> -->
+	<ol>
+		<li>
+		ul item one
+		</li>
+		<li>
+		ul item two
+		</li>
+		<li>
+		ul item three
+		</li>
+	</ol>
+	<div class="cf">
+		<ul>
+			<li>
+			ul item one
+			</li>
+			<li>
+			ul item two
+			</li>
+			<li>
+			ul item three
+			</li>
+		</ul>
+	</div>
+	<hr />
+
 	<h1>Heading One: Far far away</h1>
 	<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
 	<h2>Heading Two: A small river named Duden</h2>
@@ -23,49 +79,11 @@
 		</p>
 	</div>
 	<hr />
-	<nav>
-		<ul>
-			<li>
-				<a href="#">anchor 1</a>
-			</li>
-			<li>
-				<a href="#">anchor 2</a>
-			</li>
-			<li>
-				<a href="#">anchor 3</a>
-			</li>
-		</ul>
-	</nav>
-	<ul>
-		<li>
-		ul item one
-		</li>
-		<li>
-		ul item two
-		</li>
-		<li>
-		ul item three
-		</li>
-	</ul>
-	<div class="cf">
-		<ul>
-			<li>
-			ul item one
-			</li>
-			<li>
-			ul item two
-			</li>
-			<li>
-			ul item three
-			</li>
-		</ul>
-	</div>
-	<hr />
 	<code>
-		var code = js
+		var code = 'js';
 	</code>
 	<hr />
-	<form class="forms">
+<!-- 	<form class="forms">
 		<fieldset>
 			<legend>Inputs: Text</legend>
 			<label for="name">Name<input type="text" name="name" id="name" /></label>
@@ -83,10 +101,10 @@
 				<label for="info3"><input type="radio" name="info3" id="radio3" /> Radio 3</label>
 			<legend>Selectbox</legend>
 			<select>
-				<option value="volvo">Volvo</option>
-				<option value="saab">Saab</option>
-				<option value="mercedes">Mercedes</option>
-				<option value="audi">Audi</option>
+				<option value="option1">Option 1</option>
+				<option value="option2">Option 2</option>
+				<option value="option3">Option 3</option>
+				<option value="option4">Option 4</option>
 			</select>
 			<legend>Textarea</legend>
 			<label for="message">Message<textarea name="message" id="message"></textarea></label>
@@ -123,6 +141,9 @@
 		</tr>
 	</table>
 
-	</div>
-<?php include("_partials/widgets/carousel.php"); ?>
+	<?php include("_partials/widgets/grid.php"); ?> -->
+
+<!-- end test #container -->
+</div>
+
 <?php include("_partials/bottom.php"); ?>

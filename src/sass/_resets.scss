@@ -27,7 +27,7 @@ blockquote, code {
     display: block
 }
 
-div, object, iframe,
+object, iframe,
 h6, p, blockquote, pre,
 abbr, address, cite, code,
 del, dfn, em, img, ins, kbd, q, samp,
@@ -68,12 +68,13 @@ h1, h2, h3, h4, h5, h6, b, strong {
 }
 
 a {
-	color: $hotpink;
+	color: $white;
+	text-decoration: none;
 	&:visited {
-		color: $hotpinkAccent;
+		color: $white;
 	}
 	&:hover, &:focus, &:active {
-		color: $hotpinkAccent;
+		color: $white;
 	}
 }
 
@@ -82,7 +83,7 @@ address, blockquote, cite, em, i, q, mark {
 }
 blockquote, q {
     font-family: "Times New Roman", Georgia, serif;
-    color: $hotpink;
+    color: $accent;
 	&:before/*, &:after*/ {
 		//font-size: 3em;
 		@include fontStack;
@@ -122,14 +123,14 @@ abbr[title], dfn[title], acronym {
 
 ul, ol {
 	margin: 0 0 $baseLine 0;
-    list-style: none
+    list-style: none;
 }
 ul li {
 	list-style-type: none
 }
 ol {
 	li {
-		list-style-type: decimal
+		list-style: inside decimal;
 	}
 	ol li {
 		list-style: upper-alpha
@@ -146,10 +147,12 @@ hr {
     margin-top: -1px;
     padding: 0;
     border: 0;
-    border-top: 1px solid $hotpink
+    border-top: 1px solid $accent
 }
 
 input, select {
+	padding: .5em;
+	border: 1px solid $gray40;
     vertical-align: middle
 }
 

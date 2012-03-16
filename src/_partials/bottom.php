@@ -1,5 +1,4 @@
-	<!-- end test #container -->
-	</div>
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 	<!-- Plugins -->
 	<script src="http://cdn.jquerytools.org/1.2.6/all/jquery.tools.min.js"></script>

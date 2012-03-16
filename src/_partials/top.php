@@ -25,8 +25,6 @@
 		<!--[if lt IE 9]>
 			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
-		<!--<script src="js/modernizr.custom.js"></script>-->
+		<script src="js/modernizr.custom.js"></script>
 	</head>
 	<body>
-	<!-- begin test #container -->
-	<div id"container">

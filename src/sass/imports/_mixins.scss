@@ -62,3 +62,23 @@
 		//filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='lighten($top, 3)', endColorstr='lighten($bottom, 3)',GradientType=0 );
 	}
 }
+
+@mixin visuallyhidden {
+    position: absolute;
+    margin: -1px;
+    padding: 0;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+    &.focusable:active,
+	&.focusable:focus {
+	    position: static;
+	    margin: 0;
+	    height: auto;
+	    width: auto;
+	    overflow: visible;
+	    clip: auto;
+	}
+}

@@ -1,4 +1,3 @@
-<?php include("includes/top.php"); ?>
 		<header class="group">
 			<div class="span-12">
 				12
@@ -70,5 +69,3 @@
 				24
 			</article>
 		</footer>
-
-<?php include("includes/bottom.php"); ?>
