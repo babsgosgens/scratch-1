@@ -5,13 +5,13 @@ $grid-width:		100%;
 $columns:			24;
 // Margins, both left and right, value doubles when totalled
 // If set to 0, group-width value left with $grid-width value. Broken.
-$margins:			1%;
+$margins:			2.08333%;
 // Span padding
-$padding: 			1%;
+$padding: 			2.08333%;
 // Gutter total width, divide by for left, right margins
 $gutter:			2%;
 // Row container after margins subtracted
-$group-width:		$grid-width - $margins * 2;
+$group-width:		$grid-width - $gutter * 2;
 
 // TODO: Go to em measurements
 // TODO: still need to consider offseting columns.
@@ -35,10 +35,11 @@ $group-width:		$grid-width - $margins * 2;
 @media only screen and (min-width: 57em) {
 	.group {
 		// Add margins
+		// padding: $gutter;
 		@for $i from 1 through $columns {
 			.span-#{$i} {
-				width: 100% / $columns * $i - $gutter * 2 - $padding * 2;
-				margin: $gutter;
+				width: $grid-width / $columns * $i - ($padding * 2 + $margins * 2);
+				margin: $margins;
 				padding: $padding;
 			}
 		}
