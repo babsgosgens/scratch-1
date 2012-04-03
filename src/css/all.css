@@ -31,19 +31,6 @@ footer, header, hgroup, menu, nav, section,
 blockquote, code {
   display: block; }
 
-object, iframe,
-h6, p, blockquote, pre,
-abbr, address, cite, code,
-del, dfn, em, img, ins, kbd, q, samp,
-small, var,
-dl, ol, ul,
-fieldset, form, label, legend,
-table, caption,
-article, aside, canvas, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section, summary,
-time, mark, audio, video, hr {
-  margin-bottom: 1.5em; }
-
 body {
   font: normal 100%/1.5em "Helvetica", Arial, sans-serif;
   /* base line-height */
@@ -56,13 +43,13 @@ h1 {
 
 h2 {
   font-size: 1.4em;
-  line-height: 1.071429em;
-  margin-bottom: 1.071429em; }
+  line-height: 1.07143em;
+  margin-bottom: 1.07143em; }
 
 h3 {
   font-size: 1.3em;
-  line-height: 1.153846em;
-  margin-bottom: 1.153846em; }
+  line-height: 1.15385em;
+  margin-bottom: 1.15385em; }
 
 h4, blockquote {
   font-size: 1.2em;
@@ -71,8 +58,8 @@ h4, blockquote {
 
 h5 {
   font-size: 1.1em;
-  line-height: 1.363636em;
-  margin-bottom: 1.363636em; }
+  line-height: 1.36364em;
+  margin-bottom: 1.36364em; }
 
 h1, h2, h3, h4, h5, h6, b, strong {
   font-weight: bold; }
@@ -842,7 +829,7 @@ a.button, input.button, button {
 
 .group {
   margin: 0 auto;
-  width: 98%;
+  width: 96%;
   background: #ddd; }
   .group [class^="span-"] {
     background: #f2f2f2;
@@ -850,103 +837,118 @@ a.button, input.button, button {
 
 @media only screen and (min-width: 57em) {
   .group .span-1 {
-    width: -1.833333%;
-    margin: 2%;
-    padding: 1%; }
+    width: -4.16665%;
+    margin: 2.08333%;
+    padding: 2.08333%; }
   .group .span-2 {
-    width: 2.333333%;
-    margin: 2%;
-    padding: 1%; }
+    width: 1.0e-05%;
+    margin: 2.08333%;
+    padding: 2.08333%; }
   .group .span-3 {
-    width: 6.5%;
-    margin: 2%;
-    padding: 1%; }
+    width: 4.16668%;
+    margin: 2.08333%;
+    padding: 2.08333%; }
   .group .span-4 {
-    width: 10.666667%;
-    margin: 2%;
-    padding: 1%; }
+    width: 8.33335%;
+    margin: 2.08333%;
+    padding: 2.08333%; }
   .group .span-5 {
-    width: 14.833333%;
-    margin: 2%;
-    padding: 1%; }
+    width: 12.50001%;
+    margin: 2.08333%;
+    padding: 2.08333%; }
   .group .span-6 {
-    width: 19%;
-    margin: 2%;
-    padding: 1%; }
+    width: 16.66668%;
+    margin: 2.08333%;
+    padding: 2.08333%; }
   .group .span-7 {
-    width: 23.166667%;
-    margin: 2%;
-    padding: 1%; }
+    width: 20.83335%;
+    margin: 2.08333%;
+    padding: 2.08333%; }
   .group .span-8 {
-    width: 27.333333%;
-    margin: 2%;
-    padding: 1%; }
+    width: 25.00001%;
+    margin: 2.08333%;
+    padding: 2.08333%; }
   .group .span-9 {
-    width: 31.5%;
-    margin: 2%;
-    padding: 1%; }
+    width: 29.16668%;
+    margin: 2.08333%;
+    padding: 2.08333%; }
   .group .span-10 {
-    width: 35.666667%;
-    margin: 2%;
-    padding: 1%; }
+    width: 33.33335%;
+    margin: 2.08333%;
+    padding: 2.08333%; }
   .group .span-11 {
-    width: 39.833333%;
-    margin: 2%;
-    padding: 1%; }
+    width: 37.50001%;
+    margin: 2.08333%;
+    padding: 2.08333%; }
   .group .span-12 {
-    width: 44%;
-    margin: 2%;
-    padding: 1%; }
+    width: 41.66668%;
+    margin: 2.08333%;
+    padding: 2.08333%; }
   .group .span-13 {
-    width: 48.166667%;
-    margin: 2%;
-    padding: 1%; }
+    width: 45.83335%;
+    margin: 2.08333%;
+    padding: 2.08333%; }
   .group .span-14 {
-    width: 52.333333%;
-    margin: 2%;
-    padding: 1%; }
+    width: 50.00001%;
+    margin: 2.08333%;
+    padding: 2.08333%; }
   .group .span-15 {
-    width: 56.5%;
-    margin: 2%;
-    padding: 1%; }
+    width: 54.16668%;
+    margin: 2.08333%;
+    padding: 2.08333%; }
   .group .span-16 {
-    width: 60.666667%;
-    margin: 2%;
-    padding: 1%; }
+    width: 58.33335%;
+    margin: 2.08333%;
+    padding: 2.08333%; }
   .group .span-17 {
-    width: 64.833333%;
-    margin: 2%;
-    padding: 1%; }
+    width: 62.50001%;
+    margin: 2.08333%;
+    padding: 2.08333%; }
   .group .span-18 {
-    width: 69%;
-    margin: 2%;
-    padding: 1%; }
+    width: 66.66668%;
+    margin: 2.08333%;
+    padding: 2.08333%; }
   .group .span-19 {
-    width: 73.166667%;
-    margin: 2%;
-    padding: 1%; }
+    width: 70.83335%;
+    margin: 2.08333%;
+    padding: 2.08333%; }
   .group .span-20 {
-    width: 77.333333%;
-    margin: 2%;
-    padding: 1%; }
+    width: 75.00001%;
+    margin: 2.08333%;
+    padding: 2.08333%; }
   .group .span-21 {
-    width: 81.5%;
-    margin: 2%;
-    padding: 1%; }
+    width: 79.16668%;
+    margin: 2.08333%;
+    padding: 2.08333%; }
   .group .span-22 {
-    width: 85.666667%;
-    margin: 2%;
-    padding: 1%; }
+    width: 83.33335%;
+    margin: 2.08333%;
+    padding: 2.08333%; }
   .group .span-23 {
-    width: 89.833333%;
-    margin: 2%;
-    padding: 1%; }
+    width: 87.50001%;
+    margin: 2.08333%;
+    padding: 2.08333%; }
   .group .span-24 {
-    width: 94%;
-    margin: 2%;
-    padding: 1%; }
+    width: 91.66668%;
+    margin: 2.08333%;
+    padding: 2.08333%; }
   .group [class^="span-"] {
     float: left; } }
+.case {
+  margin: 0 auto;
+  max-width: 1600px; }
+
+.shelf {
+  background-color: #ddd; }
+
+.two-up > * {
+  background-color: #eee;
+  width: 48%;
+  float: left; }
+  .two-up > *:nth-child(2n) {
+    float: right;
+    background-color: #ccc; }
+
 .visuallyhidden {
   position: absolute;
   margin: -1px;

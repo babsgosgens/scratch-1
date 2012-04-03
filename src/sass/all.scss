@@ -1,13 +1,13 @@
-@import "imports/functions";
-@import "imports/mixins";
-@import "imports/vars";
-@import "resets";
-@import "fontface";
-@import "screen";
-@import "alert";
-@import "uniform.custom";
-@import "button";
-@import "grid";
-//@import "nav";
-@import "shift";
-@import "testing";
+@import "imports/functions";	// Sass Functions
+@import "imports/mixins";		// Sass Mixins
+@import "imports/vars";			// Sass Variables
+@import "resets";				// Exhaustive Resets, Normalizations, Presets
+@import "fontface";				// @font-face
+@import "screen";				//
+@import "alert";				// Simplistic Alert Messages
+@import "uniform.custom";		// Uniform jQuery Plugin 
+@import "button";				// Buttons. Shocking!
+@import "grid";					// Grid generator
+@import "shelves";				// Gridless layout
+@import "shift";				// Mobile Nav < 750 fixed to bottom of viewport
+@import "testing";				// Vertical rhythym grid
