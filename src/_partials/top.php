@@ -12,8 +12,6 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		-->
 		<link rel="stylesheet" href="css/all.css?v=2">
-		<!-- yepnope, for when necessary: conditional loads or large amounts of js files
-		<script type="text/javascript" charset="utf-8" src="js/yepnope.1.0.2-min.js"></script> -->
 
 		<!-- NOTE: Plan on supporting IE lt 9 beyond serving it content? Or fight the good fight and delete it. -->
 		<!--[if lt IE 9]>
