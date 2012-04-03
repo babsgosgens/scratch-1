@@ -83,7 +83,7 @@
 		var code = 'js';
 	</code>
 	<hr />
-<!-- 	<form class="forms">
+	<form class="forms">
 		<fieldset>
 			<legend>Inputs: Text</legend>
 			<label for="name">Name<input type="text" name="name" id="name" /></label>
@@ -141,7 +141,7 @@
 		</tr>
 	</table>
 
-	<?php include("_partials/widgets/grid.php"); ?> -->
+	<?php include("_partials/widgets/grid.php"); ?>
 
 <!-- end test #container -->
 </div>
