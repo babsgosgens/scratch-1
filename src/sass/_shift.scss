@@ -1,4 +1,4 @@
-.visuallyhidden {
+.js .visuallyhidden {
 	@include visuallyhidden;
 }
 .js {
@@ -8,20 +8,20 @@
 }
 .no-js {
 	#toggler {
-		display: none
+		display: none;
 	}
 }
 #global-nav {
 	z-index: 100;
 	position: fixed;
 	left: 0;
-	bottom: 3em;
+	bottom: 4.999em; // relates to font-size and line height of .mobile
 	margin: 0;
-	background: $gray60
+	background: $gray60;
 }
 #toggler {
 	z-index: 200;
-	position: fixed;
+	position: fixed; // FIX: doesn't work well on mobile :( Need alternative, probably JS.
 	left: 0;
 	bottom: 0;
 	padding: 1em 0;
@@ -32,6 +32,11 @@
 	&:hover {
 		background: darken($accent, 5);
 	}
+}
+
+// remove if not using pictogram icon font
+.mobile {
+	font: 2em/.5em 'ModernPictogramsNormal', Helvetica, Arial, sans-serif;
 }
 
 nav {
