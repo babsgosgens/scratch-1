@@ -7,7 +7,7 @@
 	<!-- start styleguide -->
 
 	<h1>Navigation and Lists</h1>
-	<a id="toggler" class="mobile">Menu</a>
+	<a id="toggler" class="mobile">4</a>
 	<nav id="global-nav" role="navigation" class="global-nav visuallyhidden microcf">
 		<ul>
 			<li>
@@ -140,6 +140,15 @@
 			<td>column 4 data</td>
 		</tr>
 	</table>
+	
+	<hr>
+	
+<!-- 	<div class="pictograms">
+		abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ 1234567890 -_ += {} [] :; "' <> ,. ?/ !@#$%678()
+	</div>
+	<div class="iconic">
+		abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ 1234567890 -_ += {} [] :; "' <> ,. ?/ !@#$%678()
+	</div> -->
 
 	<?php include("_partials/widgets/grid.php"); ?>
 
