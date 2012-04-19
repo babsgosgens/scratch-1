@@ -1,11 +1,8 @@
 $(function() {
 
-	// Uniform Form Prettifier
-
-	$("select, textarea, input:checkbox, input:radio, input:text").uniform();
-
     // Mobile + Menu
 	// Highly inspired by Seth Warburton @nternetinspired
+    // *TODO: Add ability to close menu if touch outside of menu while menu open
 
     var menu = $('#global-nav'),
         menuToggle = $('#toggler');
@@ -48,5 +45,10 @@ $(function() {
         }
         e.preventDefault();
     });
+
+
+    // Uniform Form Prettifier
+
+    $("select, textarea, input:checkbox, input:radio, input:text").uniform();
 
 });
