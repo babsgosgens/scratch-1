@@ -1,5 +1,7 @@
 // Inspired by: Vanilla Resets Hybrid + html5doctor.com Reset Stylesheet v1.6.1 | http://richclarkdesign.com
-
+html, body {
+	height: 100%;
+}
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 abbr, address, cite, code,
@@ -27,95 +29,8 @@ blockquote, code {
     display: block
 }
 
-object, iframe,
-h6, p, blockquote, pre,
-abbr, address, cite, code,
-del, dfn, em, img, ins, kbd, q, samp,
-small, var,
-dl, ol, ul, 
-fieldset, form, label, legend,
-table, caption, 
-article, aside, canvas, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section, summary,
-mark, audio, video, hr {
-	//margin-bottom: $baseLine
-}
-
-// 	Typography
-////////////////////////////////
-
-body {
-	font: normal #{$basefont}/#{$baseLine} "Helvetica", Arial, sans-serif; /* base line-height */
-	color: $gray90;
-}
-h1 {
-	@include heading(1.5em)
-}
-h2 {
-	@include heading(1.4em)
-}
-h3 {
-	@include heading(1.3em)
-}
-h4, blockquote {
-	@include heading(1.2em)
-}
-h5 {
-	@include heading(1.1em)
-}
-h1, h2, h3, h4, h5, h6, b, strong {
-	font-weight: bold
-}
-
-a {
-	color: $white;
-	text-decoration: none;
-	&:visited {
-		color: $white;
-	}
-	&:hover, &:focus, &:active {
-		color: $white;
-	}
-}
-
-address, blockquote, cite, em, i, q, mark {
-    font-style: italic
-}
-blockquote, q {
-    font-family: "Times New Roman", Georgia, serif;
-    color: $accent;
-	&:before/*, &:after*/ {
-		//font-size: 3em;
-		@include fontStack;
-    	content: ''
-	}
-}
-dl {}
-dl dt, mark {
-	font-weight: bold
-}
-
-blockquote, code, dd {
-	margin-right: $baseLine;
-	margin-left: $baseLine
-}
-code, kbd, pre, samp, tt {
-	padding: $baseLine;
-	background: #444;
-	font-family: 'Andale Mono', 'Lucida Console', monospace;
-	color: #fff
-}
-ins, mark {
-    background-color: #ff9;
-    text-decoration: none
-}
-del {
-    text-decoration: line-through
-}
-
-abbr[title], dfn[title], acronym {
-    border-bottom: 1px dotted;
-    cursor: help
+p {
+	margin-bottom: $baseLine
 }
 
 // LISTS
@@ -145,6 +60,7 @@ ol {
 hr {
     display: block;
     margin-top: -1px;
+    margin-bottom: $baseLine;
     padding: 0;
     border: 0;
     border-top: 1px solid $accent
@@ -203,16 +119,8 @@ label {
 // Structural
 ////////////////////////////////
 
-.cf:before,
-.cf:after {
-    content:"";
-    display:table;
-}
-.cf:after {
-    clear:both;
-}
 .cf {
-    zoom:1;
+	@include micro-cf;
 }
 
 p.wrapped {
