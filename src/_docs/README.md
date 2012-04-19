@@ -4,40 +4,47 @@ Acknowledgements & Big Ups
 
 Copyright (c) 2011 Cristina Solana, http://nightshiftcreative.com/
 
-HTML Markup:
-	Patterns:
-		buttons.html
+	/
+		- widgets/buttons.php
+		- widgets/grid.php
+		- shelves.php
 
-SASS | CSS:
-	Patterns
-		resets.scss
-		buttons.scss
+	/sass/
+		- resets.scss
+		- buttons.scss
+		- grid.scss
 
-JS:
-	Patterns
-		jquery.alerts.js
+	/js/
+		- jquery.alerts.js
+		- scratch.js
 
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
++ Responsive Mobile Menu
+
+Highly inspired by Seth Warburton @nternetinspired & Chris Coyier's elegant screensize test http://css-tricks.com/resolution-specific-stylesheets
+	
+	- shift.scss
+
+
++ Alert
 
 Inspired & modified or straight jacked from the talented bros & ladies at: (Artfully masterminded by ZURB)
 Copyright (c) 2011 ZURB, http://www.zurb.com/
 
-HTML Markup:
-	Patterns
-		alerts.html
-		tabs.html
-		pagination.html
+	- alerts.php
+	- alerts.scss
 
-SASS | CSS:
-	Patterns
-		alerts.sass
-		tabs.sass
-		pagination.sass
 
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Modern Pictograms font: Copyright (c) 2012, John Caserta (mail@johncaserta.com), http://thedesignoffice.org/project/modern-pictograms/ 
 
-Modern Pictograms font: Copyright (c) 2012, John Caserta (mail@johncaserta.com), http://thedesignoffice.org/project/modern-pictograms/ 
 
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Uniform JS: uniformjs.com
+	
+	- jquery.uniform.min.js
+	- uniform.custom.scss
+	- images/uniform/
 
-Uniform JS: uniformjs.com
++ Modernizr
+
+	- modernizer.custom.js
+	- modload.js
