@@ -10,10 +10,6 @@
 		clear:both;
 	}
 }
-// Extend mixin to reduce bloat
-.microcf {
-	@include micro-cf;
-}
 
 // Fonts
 @mixin fontStack {
