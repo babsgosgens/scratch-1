@@ -59,8 +59,8 @@ ol {
 }
 hr {
     display: block;
-    margin-top: -1px;
-    margin-bottom: $baseLine;
+    //margin-top: -1px;
+    margin: $baseLine 0;
     padding: 0;
     border: 0;
     border-top: 1px solid $accent
@@ -98,22 +98,6 @@ tr:nth-child(odd) {
 }
 tfoot {
 	font-style: italic
-}
-
-// Forms
-////////////////////////////////
-
-label {
-	font-weight: bold;
-	color: #555;
-	display: block;
-	margin-bottom: .5em;
-	input {
-		display: block;
-		&:hover, &:focus {
-			
-		}
-	}
 }
 
 // Structural

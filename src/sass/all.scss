@@ -2,12 +2,13 @@
 @import "imports/mixins";		// Sass Mixins
 @import "imports/vars";			// Sass Variables
 @import "resets";				// Exhaustive Resets, Normalizations, Presets
-@import "typography";			// Exhaustive Resets, Normalizations, Presets
-@import "screen";				//
+@import "typography";			// 
+@import "screen";				// 
 @import "alert";				// Simplistic Alert Messages
 @import "uniform.custom";		// Uniform jQuery Plugin 
-@import "button";				// Buttons. Shocking!
-@import "grid";					// Grid generator
+@import "button";				// 
+@import "grid";					// 
 @import "shelves";				// Gridless layout
+@import "form";					// Form Elements
 @import "shift";				// Mobile Nav < 750 fixed to bottom of viewport
 @import "testing";				// Vertical rhythym grid
