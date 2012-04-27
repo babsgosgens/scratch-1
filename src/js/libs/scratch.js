@@ -15,7 +15,7 @@ $(function() {
         e.preventDefault();
     });
 
-    function menuSwitch(width) {
+    function menuSwitch() {
         width = $(window).width();
         if (width > 750){
             menu.removeClass('hidden');
@@ -49,6 +49,6 @@ $(function() {
 
     // Uniform Form Prettifier
 
-    $("select, textarea, input:checkbox, input:radio, input:text").uniform();
+    $("select, textarea, input:checkbox, input:radio, input").uniform();
 
 });
