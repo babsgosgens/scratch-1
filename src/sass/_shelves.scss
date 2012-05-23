@@ -3,9 +3,15 @@
 	max-width: 1600px;
 }
 .shelf {
+	@include micro-cf;
 	background-color: #ddd; // testing only
+	clear: both;
 }
-.two-up > * {
+
+// use float, no need for margin. Could ofc, float all left with margins on 2n+ siblings
+// use display inline, no need to declare float twice. Need to declare margin for 2n+ siblings, this is great when all siblings are same element - use +.
+
+.two-up > * { // This is evil, I know. 
 	background-color: #eee; // testing only
 	width: 48%;
 	float: left;
@@ -13,8 +19,6 @@
 		float: right;	
 		background-color: #ccc; // testing only
 	}
-	&:nth-child(3) {
-		//clear: both;
-		//background-color: #ccc; // testing only
-	}
 }
+
+// block classes are for padding and styling, not grid.
