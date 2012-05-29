@@ -1,0 +1,27 @@
+$almost_golden:		1.6;
+// Fonts
+$basefont:			100%;
+$baseLine:			1.5em;
+
+// Colors
+$black:			rgba(0,0,0,1);
+$white:			rgba(255,255,255,1);
+$accent:		rgba(255,0,100,1);
+$accentDark:	darken($accent, 10%);
+
+// Grid Variables 
+// Container width
+$grid-width:		100%;
+// Number of columns
+$columns:			24;
+// Margins, both left and right, value doubles when totalled
+// If set to 0, group-width value left with $grid-width value. Broken.
+$margins:			#{$almost_golden}%;
+// Span padding
+$padding: 			0;
+// Gutter total width, divide by for left, right margins
+$gutter:			#{$almost_golden}%;
+// Row container after margins subtracted
+$group-width:		$grid-width - $gutter * 2;
+
+@import "scratch/mixins";

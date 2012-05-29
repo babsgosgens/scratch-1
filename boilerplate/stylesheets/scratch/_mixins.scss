@@ -1,0 +1,84 @@
+// Clearfix
+@mixin micro-cf {
+    zoom:1;
+    &:before {
+	    content:"";
+	    display:table;
+	}
+	&:after {
+		@extend :before;
+		clear:both;
+	}
+}
+
+// Fonts
+@mixin fontStack {
+	font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+@mixin heading($font-size) {
+	font-size: $font-size;
+	line-height: ($baseLine / $font-size)+em;
+	margin-bottom: ($baseLine / $font-size)+em;
+}
+// Letterpress
+//$lp-dark:	1px 1px 1px rgba(0,0,0,.2);
+//$lp-light:	1px 1px 1px rgba(0,0,0,.8);
+
+// CSS3
+@mixin box-shadow {
+	-moz-box-shadow: inset 1px 1px 1px #fff, 1px 1px 3px rgba(0,0,0,.1);
+	-webkit-box-shadow: inset 1px 1px 1px #fff, 1px 1px 3px rgba(0,0,0,.1);
+	-o-box-shadow: inset 1px 1px 1px #fff, 1px 1px 3px rgba(0,0,0,.1);
+	-ms-box-shadow: inset 1px 1px 1px #fff, 1px 1px 3px rgba(0,0,0,.1);
+	box-shadow: inset 1px 1px 1px #fff, 1px 1px 3px rgba(0,0,0,.1);
+}
+
+@mixin radius {
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-o-border-radius: 3px;
+	-ms-border-radius: 3px;
+	border-radius: 3px;
+}
+
+@mixin gradient($bg, $top, $bottom) {
+	background: $bg;
+	background: -moz-linear-gradient(top, $top 0%, $bottom 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$top), color-stop(100%, $bottom));
+	background: -webkit-linear-gradient(top,  $top 0%, $bottom 100%);
+	background: -o-linear-gradient(top,  $top 0%, $bottom 100%);
+	background: -ms-linear-gradient(top,  $top 0%, $bottom 100%);
+	background: linear-gradient(top,  $top 0%, $bottom 100%);
+	//filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$top', endColorstr='$bottom',GradientType=0 );
+	&:hover, &:focus {
+		background: lighten($bg, 3);
+		background: -moz-linear-gradient(top,  lighten($top, 3) 0%, lighten($bottom, 3) 100%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,lighten($top, 3)), color-stop(100%,lighten($bottom, 3)));
+		background: -webkit-linear-gradient(top,  lighten($top, 3) 0%, lighten($bottom, 3) 100%);
+		background: -o-linear-gradient(top,  lighten($top, 3) 0%, lighten($bottom, 3) 100%);
+		background: -ms-linear-gradient(top,  lighten($top, 3) 0%, lighten($bottom, 3) 100%);
+		background: linear-gradient(top,  lighten($top, 3) 0%, lighten($bottom, 3) 100%);
+		//filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='lighten($top, 3)', endColorstr='lighten($bottom, 3)',GradientType=0 );
+	}
+}
+
+@mixin visuallyhidden {
+    position: absolute;
+    margin: -1px;
+    padding: 0;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+    &.focusable:active,
+	&.focusable:focus {
+	    position: static;
+	    margin: 0;
+	    height: auto;
+	    width: auto;
+	    overflow: visible;
+	    clip: auto;
+	}
+}
