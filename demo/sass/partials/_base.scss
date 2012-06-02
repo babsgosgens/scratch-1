@@ -16,11 +16,11 @@ $grid-width:		100%;
 $columns:			24;
 // Margins, both left and right, value doubles when totalled
 // If set to 0, group-width value left with $grid-width value. Broken.
-$margins:			#{$almost_golden}+\%;
+$margins:			1.6%; // #{$almost_golden}+100%;
 // Span padding
 $padding: 			0;
 // Gutter total width, divide by for left, right margins
-$gutter:			#{$almost_golden}+\%;
+$gutter:			$almost_golden+10%;
 // Row container after margins subtracted
 $group-width:		$grid-width - $gutter * 2;
 
