@@ -16,11 +16,12 @@ stylesheet 'partials/_uniform.custom.scss'
 javascript 'js/modload.js', :to => 'modload.js'
 javascript 'js/triggers.min.js', :to => 'triggers.min.js'
 javascript 'js/xlibs.min.js', :to => 'xlibs.min.js'
+javascript 'js/libs/jquery172.min.js', :to => 'libs/jquery172.min.js'
 javascript 'js/libs/jquery.uniform.min.js', :to => 'libs/jquery.uniform.min.js'
-javascript 'js/libs/jquery.uniform.min.js', :to => 'libs/jquery172.min.js'
-javascript 'js/libs/jquery.uniform.min.js', :to => 'libs/modernizr.custom.js'
-javascript 'js/libs/jquery.uniform.min.js', :to => 'libs/triggers.js'
+javascript 'js/libs/modernizr.253.custom.js', :to => 'libs/modernizr.253.custom.js'
+javascript 'js/libs/triggers.js', :to => 'libs/triggers.js'
 
+# STRUCTURAL PATTERNS
 html 'index.php'
 html 'patterns/head.php'
 html 'patterns/deferred.php'
@@ -37,12 +38,38 @@ html 'patterns/elements/nav.php'
 html 'patterns/elements/shelves.php'
 html 'patterns/elements/table.php'
 
+# DOCS
 file 'htaccess', :to => '.htaccess'
 file 'humans.txt'
 file 'robots.txt'
 file 'docs/README.md'
 file 'docs/license-MIT.txt'
 
+# FONTS
+file 'fonts/modern-pictograms/modernpics-webfont.eot'
+file 'fonts/modern-pictograms/modernpics-webfont.woff'
+file 'fonts/modern-pictograms/modernpics-webfont.ttf'
+file 'fonts/modern-pictograms/modernpics-webfont.svg'
+
+file 'fonts/iconic/iconic_stroke-webfont.eot'
+file 'fonts/iconic/iconic_stroke-webfont.woff'
+file 'fonts/iconic/iconic_stroke-webfont.ttf'
+file 'fonts/iconic/iconic_stroke-webfont.svg'
+
+file 'fonts/iconic/iconic_fill-webfont.eot'
+file 'fonts/iconic/iconic_fill-webfont.woff'
+file 'fonts/iconic/iconic_fill-webfont.ttf'
+file 'fonts/iconic/iconic_fill-webfont.svg'
+
+# IMAGES
+file 'images/uniform/sprite.png'
+file 'images/sample-1.jpg'
+file 'images/sample-2.jpg'
+file 'images/sample-3.jpg'
+file 'images/sample-4.jpg'
+file 'images/sample-5.jpg'
+
+# FAVICONS
 file 'favicons/apple-touch-icon-72x72-precomposed.png', :to => 'apple-touch-icon-72x72-precomposed.png'
 file 'favicons/apple-touch-icon-114x114-precomposed.png', :to => 'apple-touch-icon-114x114-precomposed.png'
 file 'favicons/apple-touch-icon-144x144-precomposed.png', :to => 'apple-touch-icon-144x144-precomposed.png'
@@ -52,8 +79,8 @@ file 'favicons/apple-touch-icon-precomposed.png', :to => 'apple-touch-icon-preco
 description "scratch boilerplate"
 
 help %Q{
-	SASS + Compass boilerplate with demo site.
-	$ compass create my_project_name -l boilerplate --using boilerplate --css-dir css --javascripts-dir js
+	SASS + Compass boilerplate with demo styleguide.
+	$ compass create demo -l boilerplate --using boilerplate --sass-dir sass --css-dir css --javascripts-dir js --no-line-comments -s compressed
 }
 
 welcome_message %Q{
