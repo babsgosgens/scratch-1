@@ -23,24 +23,24 @@
 // To calculate: target px width / $basefont = em width
 
 // @ 16px font: roughly 544px, for ipad 768 and 1024
-@media only screen and (min-width: 34em) and (min-device-width: 48em) and (max-device-width: 64em) { 
+@media only screen and (min-width: (544/16)+em) and (min-device-width: (750/16)+em) and (max-device-width: (1024/14)+em) { 
 
 }
 
 // @ 14px font: roughly 744px
-@media only screen and (min-width: 53.142em) {
+@media only screen and (min-width: (750/14)+em) {
 	body {
 		font-size: .875em;
 	}
 }
 
 // @ 14px font: roughly 1224px
-@media only screen and (min-width: 87.428em) { 
+@media only screen and (min-width: (1224/14)+em) { 
 
 }
 
 // @ 16px font: 1864px
-@media only screen and (min-width: 116.5em) { 
+@media only screen and (min-width: (1864/16)+em) { 
 	body {
 		font-size: 1em;
 	}
