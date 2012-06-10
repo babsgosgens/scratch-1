@@ -1,4 +1,4 @@
-<a id="toggler" class="mobile">4</a>
+<a id="toggler" class="mobile" aria-hidden="true" data-icon="4"></a>
 <nav id="global-nav" role="navigation" class="global-nav visuallyhidden microcf">
 	<ul>
 		<li>
