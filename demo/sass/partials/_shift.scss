@@ -13,30 +13,26 @@
 }
 #global-nav {
 	z-index: 100;
-	position: fixed;
-	left: 0;
-	bottom: 4.999em; // relates to font-size and line height of .mobile
+	//position: fixed;
+	//left: 0;
+	//bottom: 4.999em; // relates to font-size and line height of .mobile
 	margin: 0;
 	background: lighten($black, 40);
 }
 #toggler {
 	z-index: 200;
-	position: fixed; // FIX: doesn't work well on mobile :( Need alternative, probably JS.
-	left: 0;
-	bottom: 0;
-	padding: 1em 0;
+	//position: fixed; // FIX: doesn't work well on mobile :( Need alternative, probably JS.
+	//left: 0;
+	//bottom: 0;
 	display: block;
 	width: 100%;
 	background: $accent;
 	text-align: center;
+	//font-size: 1.5em;
+	//line-height: 2em;
 	&:hover {
 		background: darken($accent, 5);
 	}
-}
-
-// remove if not using pictogram icon font
-.mobile {
-	font: 2em/.5em 'ModernPictogramsNormal', Helvetica, Arial, sans-serif;
 }
 
 nav {
@@ -53,11 +49,7 @@ nav {
 			color: $white;
 			&:hover, &:focus {
 				background: rgba(0,0,0,.2);
-				transition: all 1s linear;
-				-moz-transition: all 1s linear;
-				-ms-transition: all 1s linear;
-				-o-transition: all 1s linear;
-				-webkit-transition: all 1s linear;
+				@include transition(all 1s linear false);
 			}
 		}
 	}
@@ -85,8 +77,8 @@ nav {
 		}
 	}
 
-	.mobile {
-		display: none !important
+	#toggler {
+		display: none 
 	}
 
 }
