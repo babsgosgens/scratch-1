@@ -110,3 +110,10 @@ tfoot {
 p.wrapped {
 	padding: $baseLine;
 }
+
+// Media
+////////////////////////////////
+
+img, video, embed {
+	max-width: 100%;
+}
