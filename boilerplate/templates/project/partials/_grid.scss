@@ -5,10 +5,10 @@
 // TODO: Clean up
 
 .group {
-	@extend .microcf;
+	@include micro-cf;
 	margin: 0 auto;
-	width: $group-width;
-	border: 1px solid lighten($black, 50); // testing
+	width: $grid-width; // for gutters, use $group-width
+	background: lighten($black, 80);
 	[class^="span-"] {
 		background: lighten($black, 95);
 		text-align: center; // testing
@@ -17,12 +17,11 @@
 
 @media only screen and (min-width: 57em) {
 	.group {
-		// Add margins
-		// padding: $gutter;
 		@for $i from 1 through $columns {
 			.span-#{$i} {
-				width: $grid-width / $columns * $i - ($padding * 2 + $margins * 2);
-				margin: $margins;
+				// Needs testing: using $grid-width might be problem if not 100%.
+				width: $grid-width / $columns * $i - ($padding * 2 + $margins * 2); 
+				margin: 0 $margins;
 				padding: $padding;
 			}
 		}
