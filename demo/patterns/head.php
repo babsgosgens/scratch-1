@@ -18,7 +18,7 @@
 		<link rel="apple-touch-icon-precomposed" href="apple-touch-icon-72x72-precomposed.png">
 		<link rel="apple-touch-icon-precomposed" href="apple-touch-icon-114x114-precomposed.png">
 		<link rel="apple-touch-icon-precomposed" href="apple-touch-icon-144x144-precomposed.png">
-		<script src="js/libs/modernizr.custom.js"></script>
+		<script src="js/libs/modernizr.253.custom.js"></script>
 		<!-- NOTE: Plan on supporting IE lt 9 beyond serving it content? Or fight the good fight and delete it. -->
 		<!--[if lt IE 9]>
 			<link rel="stylesheet" href="stylesheets/ie.css">

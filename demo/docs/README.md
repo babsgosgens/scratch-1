@@ -49,6 +49,16 @@ Copyright (c) 2011 ZURB, http://www.zurb.com/
 	- modernizer.custom.js
 	- modload.js
 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
++ Commands
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
++ Creating Compass Project 
+
+compass create demo -l boilerplate --using boilerplate --sass-dir sass --css-dir css --javascripts-dir js --no-line-comments -s compressed
+
 + UglifyJS
 
 uglifyjs libs/triggers.js > triggers.min.js

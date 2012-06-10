@@ -3,15 +3,20 @@
 	max-width: 1600px;
 }
 .shelf {
-	background-color: lighten($black, 15); // testing only
+	@extend .cf;
+	background-color: lighten($black, 95); // testing only
+	clear: both;
+}
+.block {
+	@extend .cf;
 }
 .two-up > * {
-	background-color: lighten($black, 5); // testing only
+	//background-color: lighten($black, 5); // testing only
 	width: 48%;
 	float: left;
 	&:nth-child(2n) {
 		float: right;	
-		background-color: lighten($black, 25); // testing only
+		//background-color: lighten($black, 25); // testing only
 	}
 	&:nth-child(3) {
 		//clear: both;

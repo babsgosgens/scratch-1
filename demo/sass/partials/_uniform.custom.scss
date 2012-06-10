@@ -59,9 +59,7 @@ textarea.uniform {
   border-left: solid 1px #aaa;
   border-bottom: solid 1px #ccc;
   border-right: solid 1px #ccc;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
+  @include border-radius(3px);
   outline: 0;
 }
 
