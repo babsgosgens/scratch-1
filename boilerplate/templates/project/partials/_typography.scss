@@ -1,5 +1,5 @@
 body {
-    font: normal #{$basefont}/#{$baseLine} "Helvetica", Arial, sans-serif; /* base line-height */
+    font: normal #{$baseFont}/#{$baseLine} "Helvetica", Arial, sans-serif; /* base line-height */
     color: lighten($black, 10);
 }
 
@@ -20,6 +20,9 @@ h5 {
 }
 h1, h2, h3, h4, h5, h6, b, strong {
     font-weight: bold
+}
+h1, h2, h3, h4, h5, h6, p {
+    text-rendering: optimizelegibility;
 }
 
 blockquote {
@@ -132,4 +135,8 @@ abbr[title], dfn[title], acronym {
 	&:hover {
 		color: $black
 	}
+}
+
+[data-icon] {
+    @include data-icon(ModernPictogramsNormal, 2em, 2em);
 }
