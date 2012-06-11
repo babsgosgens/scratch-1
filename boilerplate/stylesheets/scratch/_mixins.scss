@@ -9,30 +9,30 @@
 // Clearfix
 @mixin micro-cf {
     &:before {
-	    content:"";
-	    display:table;
-	}
-	&:after {
-		@extend :before;
-		clear:both;
-	}
-	@include has-layout;
+        content:"";
+        display:table;
+    }
+    &:after {
+        @extend :before;
+        clear:both;
+    }
+    @include has-layout;
 }
 
 // Fonts
 @mixin fontStack {
-	font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 @mixin heading($font-size) {
-	font-size: $font-size;
-	line-height: ($baseLine / $font-size)+em;
-	margin-bottom: ($baseLine / $font-size)+em;
+    font-size: $font-size;
+    line-height: ($baseLine / $font-size)+em;
+    margin-bottom: ($baseLine / $font-size)+em;
 }
 
 // Letterpress
-//$lp-dark:	1px 1px 1px rgba(0,0,0,.2);
-//$lp-light:	1px 1px 1px rgba(0,0,0,.8);
+//$lp-dark: 1px 1px 1px rgba(0,0,0,.2);
+//$lp-light:    1px 1px 1px rgba(0,0,0,.8);
 
 @mixin visuallyhidden {
     position: absolute;
@@ -44,14 +44,14 @@
     clip: rect(0 0 0 0);
     border: 0;
     &.focusable:active,
-	&.focusable:focus {
-	    position: static;
-	   	width: auto;
-	    height: auto;
-	    margin: 0;
-	    overflow: visible;
-	    clip: auto;
-	}
+    &.focusable:focus {
+        position: static;
+        width: auto;
+        height: auto;
+        margin: 0;
+        overflow: visible;
+        clip: auto;
+    }
 }
 
 // ADD webkit-filter
@@ -59,11 +59,11 @@
 // FONT ICONS: Straight jacking Chris Coyier right here. 
 
 @mixin data-icon($icon-font, $icon-font-size, $line-height) {
-	&:before {
-		font-family: $icon-font;
-		font-size: $icon-font-size !important;
-		line-height: $line-height !important;
-		content: attr(data-icon);
-		speak: none;
-	}
+    &:before {
+        font-family: $icon-font;
+        font-size: $icon-font-size !important;
+        line-height: $line-height !important;
+        content: attr(data-icon);
+        speak: none;
+    }
 }

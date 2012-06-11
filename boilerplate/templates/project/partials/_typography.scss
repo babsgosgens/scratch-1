@@ -4,29 +4,30 @@ body {
 }
 
 h1 {
-    @include heading(1.5em)
+    @include heading(1.5em);
+    color: $accent;
 }
 h2 {
-    @include heading(1.4em)
+    @include heading(1.4em);
 }
 h3 {
-    @include heading(1.3em)
+    @include heading(1.3em);
 }
 h4 {
-    @include heading(1.2em)
+    @include heading(1.2em);
 }
 h5 {
-    @include heading(1.1em)
+    @include heading(1.1em);
 }
 h1, h2, h3, h4, h5, h6, b, strong {
-    font-weight: bold
+    font-weight: bold;
 }
 h1, h2, h3, h4, h5, h6, p {
     text-rendering: optimizelegibility;
 }
 
 blockquote {
-    @include heading(1.2em)
+    @include heading(1.2em);
 }
 
 a {
@@ -41,7 +42,7 @@ a {
 }
 
 address, blockquote, cite, em, i, q, mark {
-    font-style: italic
+    font-style: italic;
 }
 
 blockquote, q {
@@ -49,7 +50,7 @@ blockquote, q {
     color: $accent;
     &:before/*, &:after*/ {
         @include fontStack;
-        content: ''
+        content: '';
     }
 }
 
@@ -115,26 +116,6 @@ abbr[title], dfn[title], acronym {
     font-weight: normal;
     font-style: normal;
 
-}
-
-.pictograms, .pictograms a {
-	font: 2em/#{$baseLine} 'ModernPictogramsNormal', Helvetica, Arial, sans-serif;
-	letter-spacing: 0;
-	color: $accent;
-	text-decoration: none;
-	&:hover {
-		color: $black
-	}
-}
-
-.iconic, .iconic a {
-	font: 2em/#{$baseLine} 'IconicStrokeRegular', Helvetica, Arial, sans-serif;
-	letter-spacing: 0;
-	color: $accent;
-	text-decoration: none;
-	&:hover {
-		color: $black
-	}
 }
 
 [data-icon] {

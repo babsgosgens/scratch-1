@@ -1,7 +1,7 @@
 $(function() {
 
     // Mobile + Menu
-	// Highly inspired by Seth Warburton @nternetinspired
+    // Highly inspired by Seth Warburton @nternetinspired
     // *TODO: Add ability to close menu if touch outside of menu while menu open
 
     var menu = $('#global-nav'),

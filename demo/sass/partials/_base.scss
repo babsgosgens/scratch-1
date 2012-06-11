@@ -6,7 +6,7 @@ $baseLine:			1.5em;
 // Colors
 $black:			rgba(0,0,0,1);
 $white:			rgba(255,255,255,1);
-$accent:		rgba(255,0,100,1);
+$accent:		#000;//rgba(255,0,100,1);
 $accentDark:	darken($accent, 10%);
 
 // Grid Variables 
