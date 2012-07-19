@@ -20,8 +20,8 @@
 }
 
 // Fonts
-@mixin fontStack {
-    font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+@mixin fontStack($type) {
+    font-family: $type;
 }
 
 @mixin heading($font-size) {
@@ -41,7 +41,9 @@
 // -webkit-filter: saturate(0%);
 // -webkit-filter: sepia(100%);
 @mixin webkit-filter($filter, $measure) {
-    -webkit-filter: $filter($measure);
+    -webkit-filter:#{$filter}unquote("(#{$measure})");
+    -moz-filter:#{$filter}unquote("(#{$measure})");
+    filter:#{$filter}unquote("(#{$measure})");
 }
 
 // Letterpress
