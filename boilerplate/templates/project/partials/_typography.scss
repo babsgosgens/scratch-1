@@ -26,10 +26,6 @@ h1, h2, h3, h4, h5, h6, p {
     text-rendering: optimizelegibility;
 }
 
-blockquote {
-    @include heading(1.2em);
-}
-
 a {
     color: $white;
     text-decoration: none;
@@ -46,10 +42,12 @@ address, blockquote, cite, em, i, q, mark {
 }
 
 blockquote, q {
-    font-family: "Times New Roman", Georgia, serif;
+    margin-top: $baseLine;
+    margin-bottom: $baseLine;
+    @include fontStack($serif);
     color: $accent;
     &:before/*, &:after*/ {
-        @include fontStack;
+        @include fontStack($serif);
         content: '';
     }
 }
@@ -60,28 +58,28 @@ dl dt, mark {
 
 blockquote, code, dd {
     margin-right: $baseLine;
-    margin-left: $baseLine
+    margin-left: $baseLine;
 }
 
 code, kbd, pre, samp, tt {
     padding: $baseLine;
     background: lighten($black, 25);
-    font-family: 'Andale Mono', 'Lucida Console', monospace;
+    @include fontStack($monospace);
     color: $white
 }
 
 ins, mark {
     background-color: lighten($black, 99);
-    text-decoration: none
+    text-decoration: none;
 }
 
 del {
-    text-decoration: line-through
+    text-decoration: line-through;
 }
 
 abbr[title], dfn[title], acronym {
     border-bottom: 1px dotted;
-    cursor: help
+    cursor: help;
 }
 
 @font-face {
