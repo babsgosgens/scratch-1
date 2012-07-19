@@ -1,9 +1,0 @@
-[submodule "build/submodules/yepnope"]
-	path = build/submodules/yepnope
-	url = git://github.com/SlexAxton/yepnope.js.git
-[submodule "build/submodules/html5-boilerplate"]
-	path = build/submodules/html5-boilerplate
-	url = git://github.com/h5bp/html5-boilerplate.git
-[submodule "build/submodules/foundation"]
-	path = build/submodules/foundation
-	url = git://github.com/zurb/foundation.git
