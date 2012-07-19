@@ -115,6 +115,7 @@ img, video, embed {
 
 img {
     border: 0;
+    @include webkit-filter(sepia, 50%);
     -ms-interpolation-mode: bicubic;
 }
 
