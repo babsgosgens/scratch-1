@@ -33,8 +33,12 @@ blockquote, code {
     display: block;
 }
 
-p {
-    margin-bottom: $baseLine;
+@for $i from 1 through 6 {
+    p  { 
+        ~ #{h}#{$i} {
+            margin-top: $baseLine;
+        }
+    }
 }
 
 ////////////////////////////////
@@ -101,10 +105,6 @@ tfoot {
     @include micro-cf;
 }
 
-p.wrapped {
-    padding: $gutter;
-}
-
 ////////////////////////////////
 // Media
 ////////////////////////////////
@@ -115,8 +115,11 @@ img, video, embed {
 
 img {
     border: 0;
-    @include webkit-filter(sepia, 50%);
+    @include webkit-filter(grayscale, 70%);
     -ms-interpolation-mode: bicubic;
+    &:hover {
+        @include webkit-filter(sepia, 0);
+    }
 }
 
 

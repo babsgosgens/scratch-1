@@ -24,11 +24,7 @@
     </div>
     <div class="container">
         <h2>Paragraph</h2>
-            <?php include("patterns/elements/block-loose.php"); ?>
-    </div>
-    <div class="container">
-        <h2>Paragraph Wrapped</h2>
-            <?php include("patterns/elements/block-wrap.php"); ?>
+            <?php include("patterns/elements/text.php"); ?>
     </div>
 
     <h1>Buttons</h1>

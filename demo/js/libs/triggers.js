@@ -10,13 +10,8 @@ $(function() {
     menu.addClass('hidden');
     menu.removeClass('visuallyhidden');
 
-    menuToggle.on("click", function(e) {
-        if (menu.hasClass('hidden')) {
-            menu.animate().removeClass('hidden', 1000);
-        } else {
-            menu.animate().addClass('hidden', 1000);
-        }
-        //menu.slideToggle();
+    menuToggle.click(function(e) {
+        menu.slideToggle();
         e.preventDefault();
     });
 

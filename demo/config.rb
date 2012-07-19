@@ -1,4 +1,4 @@
-load '/Users/stoic/Sites/tools/scratch/boilerplate'
+load '/Users/cs/Sites/tools/scratch/boilerplate'
 # Require any additional compass plugins here.
 
 # Set this to the root of your project when deployed:
