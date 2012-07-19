@@ -5,8 +5,8 @@ Acknowledgements & Big Ups
 Copyright (c) 2011 Cristina Solana, http://nightshiftcreative.com/
 
 	/
-		- widgets/buttons.php
-		- widgets/grid.php
+		- patterns/elements/button.php
+		- patterns/elements/grid.php
 		- shelves.php
 
 	/sass/
@@ -23,7 +23,8 @@ Copyright (c) 2011 Cristina Solana, http://nightshiftcreative.com/
 
 Highly inspired by Seth Warburton @nternetinspired & Chris Coyier's elegant screensize test http://css-tricks.com/resolution-specific-stylesheets
 	
-	- shift.scss
+	- nav.scss
+	- js/triggers.js
 
 
 + Alert
@@ -36,7 +37,7 @@ Copyright (c) 2011 ZURB, http://www.zurb.com/
 
 
 + Modern Pictograms font: Copyright (c) 2012, John Caserta (mail@johncaserta.com), http://thedesignoffice.org/project/modern-pictograms/ 
-
++ Iconic font: Licensed under Creative Commons Attribution-ShareAlike 3.0 Unported, P.J. Onori, http://somerandomdude.com/work/iconic/
 
 + Uniform JS: uniformjs.com
 	
@@ -47,7 +48,7 @@ Copyright (c) 2011 ZURB, http://www.zurb.com/
 + Modernizr
 
 	- modernizer.custom.js
-	- modload.js
+	- modload.js (conditional and async loading if necessary)
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -55,7 +56,7 @@ Copyright (c) 2011 ZURB, http://www.zurb.com/
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-+ Creating Compass Project 
++ Creating Compass Project w dir name, comments, compression level preferences
 
 compass create demo -l boilerplate --using boilerplate --sass-dir sass --css-dir css --javascripts-dir js --no-line-comments -s compressed
 
