@@ -1,0 +1,435 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"padding",
+				"padding-bottom"
+			],
+			[
+				"color",
+				"color-main"
+			],
+			[
+				"margin",
+				"margin-left"
+			],
+			[
+				"backgr",
+				"background-color"
+			],
+			[
+				"color-main",
+				"color-mainDark"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"list",
+				"list	list-style-type: marker"
+			],
+			[
+				"fo",
+				"font-weight"
+			],
+			[
+				"fon",
+				"font-style"
+			],
+			[
+				"bl",
+				"block"
+			],
+			[
+				"rigt",
+				"right"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"ine",
+				"inline-block"
+			],
+			[
+				"de",
+				"data-dest"
+			],
+			[
+				"origin",
+				"data-origin"
+			],
+			[
+				"or",
+				"data-origin"
+			],
+			[
+				"bas",
+				"baseGray"
+			],
+			[
+				"O",
+				"orangeAccent"
+			],
+			[
+				"OR",
+				"orange"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "Packages/Compass/Compass.sublime-build",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"Snippet: ",
+				"Snippet: sublipsum: Short <p>"
+			]
+		],
+		"width": 422.0
+	},
+	"console":
+	{
+		"height": 443.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/cs/Sites/tools/scratch/demo/sass/scratch.scss",
+		"/Users/cs/Library/Application Support/Sublime Text 2/Packages/Compass/Compass.sublime-build",
+		"/Users/cs/Sites/tools/scratch/demo/sass/partials/modules/_colorbar.scss",
+		"/Users/cs/Sites/tools/scratch/boilerplate/templates/project/scratch.scss",
+		"/Users/cs/Sites/tools/scratch/boilerplate/templates/project/manifest.rb",
+		"/Users/cs/Sites/tools/scratch/boilerplate/templates/project/partials/_testing.scss",
+		"/Users/cs/Sites/tools/scratch/boilerplate/templates/project/partials/_resets.scss",
+		"/Users/cs/Sites/tools/scratch/demo/css/scratch.css",
+		"/Users/cs/Sites/tools/scratch/boilerplate/templates/project/patterns/elements/shelves.php",
+		"/Users/cs/Sites/tools/scratch/boilerplate/templates/project/partials/layout/_shelves.scss",
+		"/Users/cs/Sites/tools/scratch/boilerplate/templates/project/docs/README.md",
+		"/Users/cs/Sites/tools/scratch/boilerplate/templates/project/partials/layout/_grid.scss",
+		"/Users/cs/Sites/Blankslate/sass/app.scss",
+		"/Users/cs/Sites/Blankslate/index.html",
+		"/Users/cs/Sites/Blankslate/.gitignore",
+		"/Users/cs/Sites/Blankslate/Blankslate.sublime-project",
+		"/Users/cs/Sites/Blankslate/molajo.sublime-project",
+		"/Users/cs/Sites/molajo.github.com/css/style.css",
+		"/Users/cs/Sites/molajito.github.com/CNAME",
+		"/Users/cs/Desktop/form.html",
+		"/Users/cs/Sites/tools/scratch/boilerplate/templates/project/partials/navigation/_menu.scss",
+		"/Users/cs/Sites/tools/scratch/boilerplate/templates/project/partials/form/_form.scss",
+		"/Users/cs/Sites/tools/scratch/boilerplate/templates/project/partials/_typography.scss",
+		"/Users/cs/Sites/tools/scratch/boilerplate/stylesheets/scratch/_mixins.scss",
+		"/Users/cs/Sites/tools/scratch/boilerplate/templates/project/partials/_base.scss",
+		"/Users/cs/Sites/tools/scratch/boilerplate/templates/project/index.php",
+		"/Users/cs/Sites/tools/scratch/boilerplate/templates/project/htaccess",
+		"/Users/cs/Sites/blankslate-foundation/sass/_settings.scss",
+		"/Users/cs/Sites/clients/ibc/1.5/templates/scratch/index.php",
+		"/Users/cs/Sites/clients/ibc/1.5/templates/scratch/sass/_min1600.scss",
+		"/Users/cs/Sites/clients/ibc/1.5/templates/scratch/sass/_min1280.scss",
+		"/Users/cs/Sites/clients/ibc/1.5/templates/scratch/sass/_min1024.scss",
+		"/Users/cs/Sites/clients/ibc/1.5/templates/scratch/sass/_min600.scss",
+		"/Users/cs/Sites/clients/ibc/1.5/templates/scratch/sass/_min768.scss",
+		"/Users/cs/Sites/clients/ibc/1.5/templates/scratch/sass/_resets.scss",
+		"/Users/cs/Sites/clients/ibc/1.5/templates/scratch/sass/_mobile.scss",
+		"/Users/cs/Sites/clients/ibc/1.5/templates/scratch/sass/_elements.scss",
+		"/Users/cs/Sites/clients/ibc/1.5/templates/scratch/sass/includes/_mixins.scss",
+		"/Users/cs/Downloads/impressivewebs-HTML9-Responsive-Boilerstrap-js-c07825d/README.md",
+		"/Users/cs/Sites/clients/ibc/1.5/templates/scratch/sass/includes/_vars.scss",
+		"/Users/cs/Sites/clients/rush/src/_partials/gallery.php",
+		"/Users/cs/Sites/clients/rush/src/login.php",
+		"/Users/cs/Sites/clients/rush/src/_partials/login.php",
+		"/Users/cs/Sites/clients/rush/src/_partials/contact.php",
+		"/Users/cs/Sites/clients/rush/src/sass/_mqMobile.scss",
+		"/Users/cs/Sites/clients/rush/src/contact.php",
+		"/Users/cs/Sites/clients/rush/src/sass/_resets.scss",
+		"/Users/cs/Sites/clients/rush/src/sass/_button.scss",
+		"/Users/cs/Sites/clients/rush/src/sass/_typography.scss",
+		"/Users/cs/Sites/clients/rush/src/sass/all.scss",
+		"/Users/cs/Sites/clients/rush/src/sass/_form.scss",
+		"/Users/cs/Sites/clients/rush/src/.htaccess",
+		"/Users/cs/Sites/clients/rush/src/static.php",
+		"/Users/cs/Sites/clients/rush/src/_partials/main.php",
+		"/Users/cs/Sites/clients/rush/src/sass/imports/_vars.scss",
+		"/Users/cs/Sites/clients/rush/src/_partials/home-services.php",
+		"/Users/cs/Sites/clients/rush/src/_partials/home-why.php",
+		"/Users/cs/Sites/clients/rush/src/sass/_mq1280.scss",
+		"/Users/cs/Sites/clients/rush/src/sass/_mq1024.scss",
+		"/Users/cs/Sites/clients/rush/src/sass/_mq750.scss",
+		"/Users/cs/Sites/clients/ibc/1.5/templates/scratch/js/triggers.min.js",
+		"/Users/cs/Sites/clients/ibc/1.5/templates/scratch/js/libs/triggers.js",
+		"/Users/cs/Sites/clients/rush/src/sass/_nav-products.scss",
+		"/Users/cs/Sites/clients/rush/src/_partials/nav-products.php",
+		"/Users/cs/Sites/clients/rush/src/sass/_nav-main.scss",
+		"/Users/cs/Sites/clients/rush/src/index.php",
+		"/Users/cs/Sites/clients/rush/src/_partials/featured-products.php",
+		"/Users/cs/Sites/clients/rush/src/README.md",
+		"/Users/cs/Sites/clients/rush/src/_partials/bottom.php",
+		"/Users/cs/Sites/clients/rush/src/_partials/top.php",
+		"/Users/cs/Sites/clients/rush/src/_partials/flexslider.php",
+		"/Users/cs/Sites/clients/rush/src/_partials/nav-main.php",
+		"/Users/cs/Sites/clients/rush/src/sass/_flexslider.scss",
+		"/Users/cs/Sites/clients/rush/src/sass/imports/_mixins.scss",
+		"/Users/cs/Sites/clients/rush/src/js/libs/triggers.js",
+		"/Users/cs/Sites/clients/rush/src/css/all.css",
+		"/Users/cs/Sites/tools/ubuntu-web-server-build-script.old/build.sh",
+		"/Users/cs/Sites/clients/rush/src/_partials/footer.php",
+		"/Users/cs/Sites/clients/rush/src/sass/_grid.scss",
+		"/Users/cs/Sites/clients/rush/src/_partials/header.php",
+		"/Users/cs/Sites/clients/rush/src/_partials/patterns/button.php",
+		"/Users/cs/Sites/clients/rush/src/sass/_tabs.scss",
+		"/Users/cs/Downloads/woothemes-FlexSlider-63272ba/demo.html",
+		"/Users/cs/Sites/clients/ibctravel/1.5/templates/scratch/index.php",
+		"/Users/cs/Sites/clients/ibctravel/1.5/templates/scratch/sass/_nav.scss",
+		"/Users/cs/Sites/clients/ibctravel/1.5/templates/scratch/sass/_min768.scss",
+		"/Users/cs/Sites/clients/ibctravel/1.5/templates/scratch/sass/_min1280.scss",
+		"/Users/cs/Sites/clients/ibctravel/1.5/templates/scratch/css/all.css",
+		"/Users/cs/Sites/clients/ibctravel/1.5/templates/scratch/sass/_min1600.scss",
+		"/Users/cs/Sites/clients/ibctravel/1.5/templates/scratch/sass/_min1024.scss",
+		"/Users/cs/Sites/clients/ibctravel/1.5/templates/scratch/sass/_min600.scss",
+		"/Users/cs/Sites/clients/ibctravel/1.5/templates/scratch/sass/_mobile.scss",
+		"/Users/cs/Sites/clients/ibctravel/1.5/templates/scratch/sass/_resets.scss",
+		"/private/etc/apache2/httpd.conf",
+		"/Users/cs/Sites/clients/ibctravel/1.5/templates/scratch/config.rb",
+		"/Users/cs/Desktop/case.html",
+		"/Users/cs/Sites/clients/ibctravel/1.5/templates/scratch/js/custom.js",
+		"/Users/cs/Sites/clients/ibctravel/1.5/templates/scratch/sass/includes/_vars.scss",
+		"/Users/cs/Sites/clients/ibctravel/1.5/templates/scratch/sass/includes/_mixins.scss",
+		"/Users/cs/Sites/clients/ibctravel/1.5/templates/scratch/sass/_hide.scss",
+		"/Users/cs/Desktop/.htaccess",
+		"/Users/cs/Sites/clients/ibctravel/1.5/templates/scratch/html/com_content/category/default_items.php",
+		"/Users/cs/Sites/clients/ibctravel/1.5/templates/scratch/html/com_content/section/blog_item.php",
+		"/Users/cs/Sites/clients/ibctravel/1.5/templates/scratch/html/com_content/category/blog_item.php",
+		"/Users/cs/Sites/clients/ibctravel/1.5/templates/scratch/html/com_content/category/blog.php",
+		"/Users/cs/Sites/clients/ibctravel/1.5/templates/scratch/html/com_content/categories/default.php",
+		"/Users/cs/Sites/clients/ibctravel/1.5/templates/scratch/html/com_content/categories/default_items.php",
+		"/Users/cs/Sites/clients/ibctravel/1.5/templates/scratch/html/com_content/section/blog.php",
+		"/Users/cs/Sites/clients/ibctravel/1.5/.htaccess",
+		"/Users/cs/Sites/clients/ibctravel/1.5/templates/scratch/sass/_uniform.custom.scss",
+		"/Users/cs/Sites/clients/ibctravel/1.5/templates/scratch/sass/_jquery.tools.tabs.scss",
+		"/Users/Shared/Dropbox/ssh keys/hostgator_dsa.pub",
+		"/Users/Shared/Dropbox/ssh keys/id_rsa.pub",
+		"/Users/Shared/Dropbox/ssh keys/macboook.pub",
+		"/Users/Shared/Dropbox/ssh keys/id_dsa.pub",
+		"/Users/cs/.93067BD7-6BGG-312E-86F3-566EB31BBC4E",
+		"/Users/cs/.ssh/id_rsa",
+		"/Users/cs/Sites/clients/ibctravel/1.5/templates/scratch/sass/migrate.scss",
+		"/Users/cs/Sites/clients/ibctravel/1.5/templates/scratch/sass/_booking.scss",
+		"/Users/cs/Sites/clients/ibctravel/1.5/templates/scratch/sass/_min480.scss",
+		"/Users/cs/Sites/clients/ibctravel/1.5/templates/scratch/sass/all.scss",
+		"/Users/cs/Sites/clients/ibctravel/1.5/templates/scratch/html/com_content/article/default.php",
+		"/Users/cs/Sites/clients/ibctravel/1.5/templates/scratch/sass/_max480.scss",
+		"/Users/cs/Sites/clients/ibctravel/1.5/templates/scratch/sass/_min800.scss",
+		"/Users/cs/Sites/clients/ibctravel/1.5/templates/scratch/sass/_screen.scss",
+		"/Users/cs/Sites/clients/ibctravel/1.5/templates/scratch/js/post-to-booking.js",
+		"/Users/cs/Sites/clients/ibctravel/1.5/templates/scratch/js/flights.js",
+		"/Users/cs/Sites/clients/ibctravel/1.5/templates/scratch/js/jquery.alerts.js"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"color",
+			".cf",
+			"padding",
+			"body",
+			"click",
+			");\n",
+			"menu-des",
+			"component",
+			".fit",
+			"input",
+			"form",
+			"button",
+			"main-content",
+			"items-row",
+			"dest_bio",
+			"h3",
+			"img",
+			"}",
+			"main",
+			"em",
+			">",
+			".main",
+			"flex-caption",
+			"first",
+			"6.25",
+			"caption",
+			"logos-",
+			"3.",
+			"<i></i>",
+			"callout",
+			"separ",
+			".prepare",
+			"sidebar",
+			"#",
+			".sidebar",
+			"#quickmenu",
+			"sidebar",
+			"quick",
+			"support",
+			"ucd",
+			".news",
+			"96",
+			"support",
+			"sidebar",
+			"home",
+			"font-sty",
+			"read",
+			"discover",
+			"main-content",
+			"83",
+			"lightbox",
+			"nav",
+			"10",
+			".mod_block",
+			".news",
+			"lighten",
+			"sand",
+			".social",
+			"social",
+			"smile",
+			"+ nav",
+			"#main-footer .mod_block + nav",
+			"travel",
+			"callout",
+			"item-page",
+			"before",
+			"bookin",
+			"span",
+			" 10px",
+			" 10px solid white;",
+			"blank",
+			"button",
+			"float: left",
+			"/treasure-cay/",
+			"bd-inner",
+			".bd-inner",
+			"terms",
+			"dt",
+			"tos",
+			"terms",
+			"google",
+			"#user1 .mod"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"",
+			"/hope-town/",
+			"/guana-cay/",
+			"/grand-bahama/",
+			"/cat-island/"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 27.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 100.0
+	},
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"",
+				"1.5/templates/scratch/config.rb"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 322.0,
+	"status_bar_visible": true
+}

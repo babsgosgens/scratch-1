@@ -8,6 +8,7 @@ body {
 }
 .container {
 	@extend .wrapper;
+	@extend %cf;
     margin-bottom: $baseLine;
     padding: $gutter;
     background-color: lighten($black, 98);

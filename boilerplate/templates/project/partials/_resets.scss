@@ -30,6 +30,7 @@ time, mark, audio, video, a, hr {
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section, 
 blockquote, code {
+    @extend %cf;
     display: block;
 }
 
@@ -101,7 +102,7 @@ tfoot {
 // Structural
 ////////////////////////////////
 
-.cf {
+%cf {
     @include micro-cf;
 }
 

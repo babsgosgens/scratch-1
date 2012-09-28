@@ -5,11 +5,8 @@
     background-color: lighten($black, 95);
 }
 .shelf {
-    @extend .cf;
+    @extend %cf;
     clear: both;
-}
-.block {
-    @extend .cf;
 }
 .two-up > * {
     width: 48%;
@@ -17,4 +14,7 @@
     &:nth-child(2n) {
         float: right;
     }
+}
+.block {
+    @extend %cf;
 }

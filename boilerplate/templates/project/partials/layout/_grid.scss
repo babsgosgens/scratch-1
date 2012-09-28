@@ -5,7 +5,7 @@
 // TODO: Clean up
 
 .group {
-    @extend .cf;
+    @extend %cf;
     margin: 0 auto;
     width: $grid-width; // for gutters, use $group-width
     background: lighten($black, 80);

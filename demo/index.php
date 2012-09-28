@@ -9,14 +9,17 @@
 
     <h1>Layout</h1>
     <div class="container">
+        <h2>[Exp] Shelves</h2>
+            <?php include("patterns/elements/shelves.php"); ?>
+    </div>
+    <div class="container">
         <h2>Grid</h2>
             <?php include("patterns/elements/grid.php"); ?>
     </div>
     <div class="container">
-        <h2>[Exp] Shelves</h2>
-            <?php include("patterns/elements/shelves.php"); ?>
+        <h2>Colorbar</h2>
+            <?php include("patterns/elements/colorbar.php"); ?>
     </div>
-
     <h1>Typography</h1>
     <div class="container">
         <h2>Code Block</h2>
