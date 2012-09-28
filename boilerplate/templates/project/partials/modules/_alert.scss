@@ -1,4 +1,14 @@
-// not sure about leaving the colors in...
+// MARKUP EXAMPLE
+
+// <div class="alert-box slide">
+//     <p>My text here</p>
+//     <a class="close" href="">&times;</a>
+// </div>
+
+// <div class="alert-box">
+//     <p>My text here</p>
+//     <a class="close" href="">&times;</a>
+// </div>
 
 div.alert-box {
   position: relative;
@@ -16,6 +26,7 @@ div.alert-box {
     margin: 0;
     margin-bottom: $baseLine;
   }
+  // not sure about leaving the colors in...
   &.success {
     background-color: lighten($accent, 25);
     text-shadow: 0 -1px rgba(0,0,0,0.3);

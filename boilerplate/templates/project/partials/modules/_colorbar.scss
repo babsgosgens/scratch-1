@@ -1,11 +1,19 @@
+// MARKUP EXAMPLE
+// <section class="colorbar-accent">
+//   <div class="colorbar-range-25"></div>
+//   <div class="colorbar-range-50"></div>
+//   <div class="colorbar-range-75"></div>
+//   <div class="colorbar-range-100"></div>
+// </section>
+
 $colors: accent, black;
 @each $color in $colors {
   .colorbar-#{$color} {
     margin-bottom: 1em;
     $i: 1;
-    $range: 20;
+    $range: 4; // Coincides with number of colors needed in bar
     @while $i < $range {
-      .colorbar-range-#{$i*(100/$range)} {
+      .colorbar-range-#{$i*(100/$range)} { // creates class name based on number of colors needed in bar
         float: left;
         width: 100/$range*1%;
         height: 1em;
