@@ -1,20 +1,20 @@
 .case {
-    max-width: 1600px;
-    margin: 0 auto;
-    padding: $gutter;
-    background-color: lighten($black, 95);
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: $gutter;
+  background-color: lighten($black, 95);
 }
 .shelf {
-    @extend %cf;
-    clear: both;
+  @extend %cf;
+  clear: both;
 }
 .two-up > * {
-    width: 48%;
-    float: left;
-    &:nth-child(2n) {
-        float: right;
-    }
+  width: 48%;
+  float: left;
+  &:nth-child(2n) {
+    float: right;
+  }
 }
 .block {
-    @extend %cf;
+  @extend %cf;
 }

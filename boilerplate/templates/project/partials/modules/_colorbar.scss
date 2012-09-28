@@ -9,7 +9,7 @@ $colors: accent, black;
         float: left;
         width: 100/$range*1%;
         height: 1em;
-        background-color: lighten(/*unquote("$")#{$color}*/$black, $i * 5); // error: "$accent" is not a color for `lighten'
+        background-color: lighten(/*unquote("$")#{$color}*/$black, $i * 5); // error: "$accent" is not a color for `lighten' :(
         $i: $i + 1;
       }
     }

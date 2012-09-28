@@ -1,121 +1,119 @@
 body {
-    font: normal #{$baseFont}/#{$baseLine} "Helvetica", Arial, sans-serif; /* base line-height */
-    color: lighten($black, 10);
+font: normal #{$baseFont}/#{$baseLine} "Helvetica", Arial, sans-serif; /* base line-height */
+color: lighten($black, 10);
 }
 
 h1 {
-    @include heading(1.5em);
-    color: $accent;
+  @include heading(1.5em);
+color: $accent;
 }
 h2 {
-    @include heading(1.4em);
+  @include heading(1.4em);
 }
 h3 {
-    @include heading(1.3em);
+  @include heading(1.3em);
 }
 h4 {
-    @include heading(1.2em);
+  @include heading(1.2em);
 }
 h5 {
-    @include heading(1.1em);
+  @include heading(1.1em);
 }
 h1, h2, h3, h4, h5, h6, b, strong {
-    font-weight: bold;
+  font-weight: bold;
 }
 h1, h2, h3, h4, h5, h6, p {
-    text-rendering: optimizelegibility;
+  text-rendering: optimizelegibility;
 }
 
 a {
+  color: $white;
+  text-decoration: none;
+  &:visited {
     color: $white;
-    text-decoration: none;
-    &:visited {
-        color: $white;
-    }
-    &:hover, &:focus, &:active {
-        color: $white;
-    }
+  }
+  &:hover, &:focus, &:active {
+    color: $white;
+  }
 }
 
 address, blockquote, cite, em, i, q, mark {
-    font-style: italic;
+  font-style: italic;
 }
 
 blockquote, q {
-    margin-top: $baseLine;
-    margin-bottom: $baseLine;
+  margin-top: $baseLine;
+  margin-bottom: $baseLine;
+  @include fontStack($serif);
+  color: $accent;
+  &:before/*, &:after*/ {
     @include fontStack($serif);
-    color: $accent;
-    &:before/*, &:after*/ {
-        @include fontStack($serif);
-        content: '';
-    }
+    content: '';
+  }
 }
 
 dl dt, mark {
-    font-weight: bold
+  font-weight: bold
 }
 
 blockquote, code, dd {
-    margin-right: $baseLine;
-    margin-left: $baseLine;
+  margin-right: $baseLine;
+  margin-left: $baseLine;
 }
 
 code, kbd, pre, samp, tt {
-    padding: $baseLine;
-    background: lighten($black, 25);
-    @include fontStack($monospace);
-    color: $white
+  padding: $baseLine;
+  background: lighten($black, 25);
+  @include fontStack($monospace);
+  color: $white
 }
 
 ins, mark {
-    background-color: lighten($black, 99);
-    text-decoration: none;
+  background-color: lighten($black, 99);
+  text-decoration: none;
 }
 
 del {
-    text-decoration: line-through;
+  text-decoration: line-through;
 }
 
 abbr[title], dfn[title], acronym {
-    border-bottom: 1px dotted;
-    cursor: help;
+  border-bottom: 1px dotted;
+  cursor: help;
 }
 
 @font-face {
-    font-family: 'ModernPictogramsNormal';
-    src: url('../fonts/modern-pictograms/modernpics-webfont.eot');
-    src: url('../fonts/modern-pictograms/modernpics-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/modern-pictograms/modernpics-webfont.woff') format('woff'),
-         url('../fonts/modern-pictograms/modernpics-webfont.ttf') format('truetype'),
-         url('../fonts/modern-pictograms/modernpics-webfont.svg#ModernPictogramsNormal') format('svg');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'ModernPictogramsNormal';
+  src: url('../fonts/modern-pictograms/modernpics-webfont.eot');
+  src: url('../fonts/modern-pictograms/modernpics-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/modern-pictograms/modernpics-webfont.woff') format('woff'),
+    url('../fonts/modern-pictograms/modernpics-webfont.ttf') format('truetype'),
+    url('../fonts/modern-pictograms/modernpics-webfont.svg#ModernPictogramsNormal') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'IconicStrokeRegular';
-    src: url('../fonts/iconic/iconic_stroke-webfont.eot');
-    src: url('../fonts/iconic/iconic_stroke-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/iconic/iconic_stroke-webfont.woff') format('woff'),
-         url('../fonts/iconic/iconic_stroke-webfont.ttf') format('truetype'),
-         url('../fonts/iconic/iconic_stroke-webfont.svg#IconicStrokeRegular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
+  font-family: 'IconicStrokeRegular';
+  src: url('../fonts/iconic/iconic_stroke-webfont.eot');
+  src: url('../fonts/iconic/iconic_stroke-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/iconic/iconic_stroke-webfont.woff') format('woff'),
+    url('../fonts/iconic/iconic_stroke-webfont.ttf') format('truetype'),
+    url('../fonts/iconic/iconic_stroke-webfont.svg#IconicStrokeRegular') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 @font-face {
-    font-family: 'IconicFillRegular';
-    src: url('../fonts/iconic/iconic_fill-webfont.eot');
-    src: url('../fonts/iconic/iconic_fill-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/iconic/iconic_fill-webfont.woff') format('woff'),
-         url('../fonts/iconic/iconic_fill-webfont.ttf') format('truetype'),
-         url('../fonts/iconic/iconic_fill-webfont.svg#IconicFillRegular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
+  font-family: 'IconicFillRegular';
+  src: url('../fonts/iconic/iconic_fill-webfont.eot');
+  src: url('../fonts/iconic/iconic_fill-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/iconic/iconic_fill-webfont.woff') format('woff'),
+    url('../fonts/iconic/iconic_fill-webfont.ttf') format('truetype'),
+    url('../fonts/iconic/iconic_fill-webfont.svg#IconicFillRegular') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 
 [data-icon] {
-    @include data-icon(ModernPictogramsNormal, 2em, 2em);
+  @include data-icon(ModernPictogramsNormal, 2em, 2em);
 }
