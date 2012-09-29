@@ -16,7 +16,7 @@ $(function() {
     });
 
     function menuSwitch() {
-        width = $(window).width();
+        var width = $(window).width();
         if (width > 750){
             menu.removeClass('hidden');
         } else {

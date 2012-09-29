@@ -2,7 +2,7 @@
 <?php include("patterns/elements/alert.php"); ?>
 
 <div class="container">
-    <?php include("patterns/elements/nav.php"); ?>
+    <?php include("patterns/elements/menu.php"); ?>
 </div>
 
 <div class="wrapper">

@@ -77,8 +77,8 @@
 @mixin data-icon($icon-font, $icon-font-size, $line-height) {
     &:before {
         font-family: $icon-font;
-        font-size: $icon-font-size !important;
-        line-height: $line-height !important;
+        font-size: $icon-font-size;
+        line-height: $line-height;
         content: attr(data-icon);
         speak: none;
     }

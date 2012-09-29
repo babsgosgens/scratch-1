@@ -32,7 +32,7 @@ html 'patterns/elements/form.php'
 html 'patterns/elements/grid.php'
 html 'patterns/elements/icons.php'
 html 'patterns/elements/lists.php'
-html 'patterns/elements/nav.php'
+html 'patterns/elements/menu.php'
 html 'patterns/elements/shelves.php'
 html 'patterns/elements/table.php'
 
