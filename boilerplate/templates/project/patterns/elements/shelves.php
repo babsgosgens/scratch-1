@@ -3,7 +3,7 @@
 <div class="case">
 
     <header class="shelf masthead">
-        <div class="block block-logo">I am a Logo</div>
+        <h1 class="block block-logo">[block-logo]</h1>
         <div class="block block-social">And I am Social. Ha.</div>
     </header>
 

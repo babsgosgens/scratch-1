@@ -1,3 +1,37 @@
+// MARKUP EXAMPLE
+// <nav class="group">
+//     <article class="span-3">
+//         3
+//     </article>
+//     <aside class="span-5">
+//         5
+//     </aside>
+//     <article class="span-3">
+//         3
+//     </article>
+//     <aside class="span-5">
+//         5
+//     </aside>
+//     <article class="span-3">
+//         3
+//     </article>
+//     <aside class="span-5">
+//         5
+//     </aside>
+// </nav>
+
+// <section class="group">
+//     <article class="span-8">
+//         8
+//     </article>
+//     <aside class="span-8">
+//         8
+//     </aside>
+//     <article class="span-8">
+//         8
+//     </article>
+// </section>
+
 // TODO: Go to em measurements
 // TODO: still need to consider offseting columns.
 // TODO: RTL, float: right instead
@@ -5,32 +39,38 @@
 // TODO: Clean up
 
 .group {
-    @extend .cf;
-    margin: 0 auto;
-    width: $grid-width; // for gutters, use $group-width
-    background: lighten($black, 80);
-    [class^="span-"] {
-        background: lighten($black, 95);
-        // testing below
-        text-align: center;
-    }
+  @extend %cf;
+  margin: 0 auto;
+  width: $grid-width; // for gutters, use $group-width
+  background: lighten($black, 80);
+  [class^="span-"] {
+    background: lighten($black, 95);
+    // testing below
+    text-align: center;
+  }
 }
 
 @media only screen and (min-width: 57em) {
-    .group {
-        @for $i from 1 through $columns {
-            .span-#{$i} {
-                // Needs testing: using $grid-width might be problem if not 100%.
-                width: $grid-width / $columns * $i - ($padding * 2 + $margins * 2); 
-                margin: $margins;
-                padding: $padding;
-                // testing below
-                outline: 1px dashed $accent;
-            }
-        }
-        [class^="span-"] {
-            float: left;
-        }
-    
+  
+  %grid-spacing {
+    margin: $margins;
+    padding: $padding;
+    // testing only below
+    outline: 1px dashed $accent;
+  }
+
+  .group {
+    [class^="span-"] {
+      float: left;
     }
+  }
+
+  @for $i from 1 through $columns {
+    .span-#{$i} {
+      // Needs testing: using $grid-width might be problem if not 100%.
+      width: $grid-width / $columns * $i - ($padding * 2 + $margins * 2); 
+      @extend %grid-spacing;
+    }
+  }
+
 }

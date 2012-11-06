@@ -7,10 +7,10 @@
     <![endif]-->
     <!-- custom -->
     <script src="js/xlibs.min.js"></script>
-    <script src="js/triggers.min.js"></script> 
-    <!-- <script src="js/libs/jquery172.min.js"></script>
-    <script src="js/libs/jquery.uniform.min.js"></script>
-    <script src="js/libs/triggers.js"></script> -->
+    <!-- <script src="js/triggers.min.js"></script> 
+    <script src="js/libs/jquery172.min.js"></script>
+    <script src="js/libs/jquery.uniform.min.js"></script> -->
+    <script src="js/libs/triggers.js"></script>
 
     <script type="text/javascript">
     var _gaq = _gaq || [];

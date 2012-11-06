@@ -18,27 +18,28 @@ table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section, summary,
 time, mark, audio, video, a, hr {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    outline: 0;
-    font-size: 100%;
-    vertical-align: baseline;
-    background: transparent;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
 }
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section, 
 blockquote, code {
-    display: block;
+  @extend %cf;
+  display: block;
 }
 
 @for $i from 1 through 6 {
-    p  { 
-        ~ #{h}#{$i} {
-            margin-top: $baseLine;
-        }
+  p  { 
+    ~ #{h}#{$i} {
+        margin-top: $baseLine;
     }
+  }
 }
 
 ////////////////////////////////
@@ -46,26 +47,26 @@ blockquote, code {
 ////////////////////////////////
 
 ul, ol {
-    margin: 0 0 $baseLine 0;
-    list-style: none;
-    list-style-image: none;
+  margin: 0 0 $baseLine 0;
+  list-style: none;
+  list-style-image: none;
 }
 ul li {
-    list-style-type: none;
+  
 }
 ol {
-    li {
-        list-style: inside decimal;
-    }
-    ol li {
-        list-style: upper-alpha;
-    }
-    ol ol li {
-        list-style: lower-roman;
-    }
-    ol ol ol li {
-        list-style: lower-alpha;
-    }
+  li {
+    list-style: inside decimal;
+  }
+  ol li {
+    list-style: upper-alpha;
+  }
+  ol ol li {
+    list-style: lower-roman;
+  }
+  ol ol ol li {
+    list-style: lower-alpha;
+  }
 }
 
 ////////////////////////////////
@@ -73,36 +74,36 @@ ol {
 ////////////////////////////////
 
 table {
-    width: 100%; // or not
-    border: 1px solid lighten($black, 10);
-    border-collapse: collapse;
-    border-spacing: 0;
-    text-align: center;
+  width: 100%; // or not
+  border: 1px solid lighten($black, 10);
+  border-collapse: collapse;
+  border-spacing: 0;
+  text-align: center;
 }
 th {
-    font-weight:bold;
-    background-color: lighten($black, 60);
-    color: $white;
+  font-weight:bold;
+  background-color: lighten($black, 60);
+  color: $white;
 }
 th, td, caption {
     
 }
 tr:nth-child(even) {
-    background: lighten($black, 95);
+  background: lighten($black, 95);
 }
 tr:nth-child(odd) {
-    background: $white;
+  background: $white;
 }
 tfoot {
-    font-style: italic;
+  font-style: italic;
 }
 
 ////////////////////////////////
 // Structural
 ////////////////////////////////
 
-.cf {
-    @include micro-cf;
+%cf {
+  @include micro-cf;
 }
 
 ////////////////////////////////
@@ -110,23 +111,22 @@ tfoot {
 ////////////////////////////////
 
 img, video, embed {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 img {
-    border: 0;
-    @include webkit-filter(grayscale, 70%);
-    -ms-interpolation-mode: bicubic;
-    &:hover {
-        @include webkit-filter(sepia, 0);
-    }
+  border: 0;
+  @include webkit-filter(grayscale, 70%);
+  -ms-interpolation-mode: bicubic;
+  &:hover {
+    @include webkit-filter(sepia, 0);
+  }
 }
 
-
 hr {
-    display: block;
-    margin: $baseLine 0;
-    padding: 0;
-    border: 0;
-    border-top: 1px solid $accent;
+  display: block;
+  margin: $baseLine 0;
+  padding: 0;
+  border: 0;
+  border-top: 1px solid $accent;
 }

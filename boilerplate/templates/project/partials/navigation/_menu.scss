@@ -18,71 +18,75 @@
 // </nav>
 
 .js .visuallyhidden {
-    @include visuallyhidden;
+  @include visuallyhidden;
 }
-.js {
-    .hidden {
-        display: none;
-    }
-}
-.no-js {
-    #toggler {
-        display: none;
-    }
-}
-#global-nav {
-    z-index: 100;
-    margin: 0;
-    background: lighten($black, 40);
-    width: 100%;
-    ul {
-        margin-bottom: 0;
-        list-style: none;
-        li {
 
-        }
-        a {
-            display: block;
-            padding: $baseLine;
-            //color: $white;
-            &:hover, &:focus {
-                background: rgba(0,0,0,.2);
-                @include single-transition(all 1s linear false);
-            }
-        }
-    }
+.js {
+  .hidden {
+    display: none;
+  }
 }
-#toggler {
-    z-index: 200;
-    display: block;
-    width: 100%;
-    background: $accent;
-    text-align: center;
-    &:hover {
-        background: darken($accent, 5);
+
+.no-js {
+  #toggler {
+    display: none;
+  }
+}
+
+#global-nav {
+  z-index: 100;
+  margin: 0;
+  width: 100%;
+  background: lighten($black, 40);
+  ul {
+    margin-bottom: 0;
+    list-style: none;
+    li {
+
     }
+    a {
+      display: block;
+      padding: $baseLine;
+      color: $white;
+      &:hover, &:focus {
+        background: rgba(0,0,0,.2);
+        @include single-transition(all 1s linear false);
+      }
+    }
+  }
+}
+
+#toggler {
+  z-index: 200;
+  display: block;
+  width: 100%;
+  background: $accent;
+  text-align: center;
+  &:hover {
+    background: darken($accent, 5);
+  }
 }
 
 @media only screen and (min-width: 750px) {
 
-    #global-nav {
-        position: relative;
-        left: 0;
-        bottom: 0;
-        background: lighten($black, 95);
-        ul {
-            text-align: center;
-            li {
-                display: inline
-            }
-            a {
-                display: inline-block
-            }
-        }
+  #global-nav {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    background: lighten($black, 95);
+    ul {
+      text-align: center;
+      li {
+        display: inline
+      }
+      a {
+        display: inline-block
+      }
     }
+  }
 
-    #toggler {
-        display: none 
-    }
+  #toggler {
+    display: none 
+  }
 
 }
