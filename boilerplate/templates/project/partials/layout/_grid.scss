@@ -32,7 +32,6 @@
 //     </article>
 // </section>
 
-// TODO: Go to em measurements
 // TODO: still need to consider offseting columns.
 // TODO: RTL, float: right instead
 // TODO: Add other Media Queries
@@ -43,32 +42,30 @@
   margin: 0 auto;
   width: $grid-width; // for gutters, use $group-width
   background: lighten($black, 80);
-  [class^="span-"] {
-    background: lighten($black, 95);
-    // testing below
-    text-align: center;
-  }
+}
+
+[class^="span-"], [class^="mod"] {
+  background: lighten($black, 95);
 }
 
 @media only screen and (min-width: 57em) {
   
   %grid-spacing {
+    float: left;
+    @include box-sizing(border-box);
     margin: $margins;
     padding: $padding;
-    // testing only below
+    // for testing only below
     outline: 1px dashed $accent;
   }
 
-  .group {
-    [class^="span-"] {
-      float: left;
-    }
+  [class^="span-"], [class^="mod"], section.global article {
   }
 
   @for $i from 1 through $columns {
-    .span-#{$i} {
+    %span-#{$i} {
       // Needs testing: using $grid-width might be problem if not 100%.
-      width: $grid-width / $columns * $i - ($padding * 2 + $margins * 2); 
+      width: ($grid-width / $columns * $i) - ($margins * 2); 
       @extend %grid-spacing;
     }
   }
