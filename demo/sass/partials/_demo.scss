@@ -1,0 +1,15 @@
+  section.global article {
+    @extend %span-6;
+  }
+  .mod--foo {
+    @extend %span-12;
+  }
+  .mod--bar {
+    @extend %span-12;
+  }
+  .mod--footnotes {
+    @extend %span-6;
+  }
+  .mod--credits {
+    @extend %span-24;
+  }
