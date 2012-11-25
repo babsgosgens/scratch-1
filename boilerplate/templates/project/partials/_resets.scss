@@ -12,7 +12,7 @@ abbr, address, cite, code,
 del, dfn, em, img, ins, kbd, q, samp,
 small, strong, sub, sup, var,
 b, i,
-dl, dt, dd, ol, ul, li,
+dl, dt, dd, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, figcaption, figure,
@@ -47,16 +47,16 @@ blockquote, code {
 ////////////////////////////////
 
 ul, ol {
-  margin: 0 0 $baseLine 0;
-  list-style: none;
-  list-style-image: none;
+  margin: 0 1em $baseLine 0;
 }
-ul li {
-  
+ul {
+  li {
+    list-style: outside;
+  }
 }
 ol {
   li {
-    list-style: inside decimal;
+    list-style: outside decimal;
   }
   ol li {
     list-style: upper-alpha;
@@ -66,6 +66,18 @@ ol {
   }
   ol ol ol li {
     list-style: lower-alpha;
+  }
+}
+
+nav {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    list-style-image: none;
+  }
+  li {
+    list-style-type: none;
   }
 }
 
