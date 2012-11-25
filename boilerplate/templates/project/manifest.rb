@@ -10,15 +10,15 @@ stylesheet 'partials/modules/_colorbar.scss'
 stylesheet 'partials/form/_form.scss'
 stylesheet 'partials/form/_uniform.custom.scss'
 stylesheet 'partials/layout/_grid.scss'
-stylesheet 'partials/layout/_shelves.scss'
 stylesheet 'partials/navigation/_menu.scss'
+stylesheet 'partials/_demo.scss'
 
-javascript 'js/modload.js', :to => 'modload.js'
+javascript 'js/load.js', :to => 'load.js'
 javascript 'js/triggers.min.js', :to => 'triggers.min.js'
 javascript 'js/xlibs.min.js', :to => 'xlibs.min.js'
-javascript 'js/libs/jquery172.min.js', :to => 'libs/jquery172.min.js'
+javascript 'js/libs/jquery-1.8.3.min.js', :to => 'libs/jquery-1.8.3.min.js'
 javascript 'js/libs/jquery.uniform.min.js', :to => 'libs/jquery.uniform.min.js'
-javascript 'js/libs/modernizr.253.custom.js', :to => 'libs/modernizr.253.custom.js'
+javascript 'js/libs/selectivizr-1.0.2.min.js', :to => 'libs/selectivizr-1.0.2.min.js'
 javascript 'js/libs/triggers.js', :to => 'libs/triggers.js'
 
 # STRUCTURAL PATTERNS
@@ -35,7 +35,6 @@ html 'patterns/elements/grid.php'
 html 'patterns/elements/icons.php'
 html 'patterns/elements/lists.php'
 html 'patterns/elements/menu.php'
-html 'patterns/elements/shelves.php'
 html 'patterns/elements/table.php'
 
 # DOCS
