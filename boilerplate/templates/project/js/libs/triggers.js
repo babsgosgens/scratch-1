@@ -7,43 +7,35 @@ $(function() {
     var menu = $('#global-nav'),
         menuToggle = $('#toggler');
 
-    menu.addClass('hidden');
-    menu.removeClass('visuallyhidden');
-
-    menuToggle.click(function(e) {
-        menu.slideToggle();
-        e.preventDefault();
-    });
-
-    function menuSwitch() {
+    function windowResize() {
         var width = $(window).width();
         if (width > 750){
-            menu.removeClass('hidden');
+            menu.removeClass('visuallyhidden');
         } else {
-            menu.addClass('hidden');
+            menu.addClass('visuallyhidden');
         }
     }
-    menuSwitch();
+    windowResize();
 
-    // Chris Coyier's elegant screensize test http://css-tricks.com/resolution-specific-stylesheets
+    $(window).resize(function() {
+        windowResize();
+    });
 
-    $(function() {
-        menuSwitch($(window).width());
-        $(window).resize(function() {
-            menuSwitch($(window).width());
-        });
+    menuToggle.click(function(e) {
+        e.preventDefault();
+        menu.toggleClass('visuallyhidden');
     });
 
     // Alerts
 
     $('a.close').click(function(e) {
+        e.preventDefault();
         var $target=$(e.target);
         if ($target.parent().is('.slide')) {
             $target.parent('.alert-box').slideUp();
         } else {
             $target.parent('.alert-box').fadeOut();
         }
-        e.preventDefault();
     });
 
 
