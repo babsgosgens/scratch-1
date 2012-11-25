@@ -45,11 +45,6 @@ Copyright (c) 2011 ZURB, http://www.zurb.com/
 	- uniform.custom.scss
 	- images/uniform/
 
-+ Modernizr
-
-	- modernizer.custom.js
-	- modload.js (conditional and async loading if necessary)
-
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 + Commands
@@ -59,9 +54,3 @@ Copyright (c) 2011 ZURB, http://www.zurb.com/
 + Creating Compass Project w dir name, comments, compression level preferences
 
 compass create demo -l boilerplate --using boilerplate --sass-dir sass --css-dir css --javascripts-dir js --no-line-comments -s compressed
-
-+ UglifyJS
-
-uglifyjs libs/triggers.js > triggers.min.js
-
-cat libs/jquery172.min.js libs/jquery.tools.min.js | uglifyjs -o jquery.min.js
