@@ -1,36 +1,33 @@
 // MARKUP EXAMPLE
-// <nav class="group">
-//     <article class="span-3">
-//         3
-//     </article>
-//     <aside class="span-5">
-//         5
-//     </aside>
-//     <article class="span-3">
-//         3
-//     </article>
-//     <aside class="span-5">
-//         5
-//     </aside>
-//     <article class="span-3">
-//         3
-//     </article>
-//     <aside class="span-5">
-//         5
-//     </aside>
-// </nav>
+// <header class="global">
+//     <div class="mod--foo">
+//         <code>.mod--foo</code>
+//     </div>
+//     <div class="mod--bar">
+//         <code>.mod--bar</code>
+//     </div>
+// </header>
 
-// <section class="group">
-//     <article class="span-8">
-//         8
+// <section class="global">
+//     <article>
+//         <code>article</code>
 //     </article>
-//     <aside class="span-8">
-//         8
+//     <aside class="mod--footnotes">
+//         <code>.mod--footnotes</code>
 //     </aside>
-//     <article class="span-8">
-//         8
+//     <article>
+//         <code>article</code>
 //     </article>
+//     <aside class="mod--footnotes">
+//         <code>.mod--footnotes</code>
+//     </aside>
 // </section>
+
+// <footer class="global">
+//     <article class="mod--credits">
+//         <code>.mod--credits</code>
+//     </article>
+// </footer>
 
 // TODO: still need to consider offseting columns.
 // TODO: RTL, float: right instead
@@ -41,33 +38,28 @@
   @extend %cf;
   margin: 0 auto;
   width: $grid-width; // for gutters, use $group-width
+  // for testing only below
   background: lighten($black, 80);
 }
 
 [class^="span-"], [class^="mod"] {
+  // for testing only below
   background: lighten($black, 95);
 }
 
-@media only screen and (min-width: 57em) {
-  
-  %grid-spacing {
-    float: left;
-    @include box-sizing(border-box);
-    margin: $margins;
-    padding: $padding;
-    // for testing only below
-    outline: 1px dashed $accent;
-  }
+%grid-spacing {
+  float: left;
+  @include box-sizing(border-box);
+  margin: $margins;
+  padding: $padding;
+  // for testing only below
+  outline: 1px dashed $accent;
+}
 
-  [class^="span-"], [class^="mod"], section.global article {
+// TO DO: make mixin instead
+@for $i from 1 through $columns {
+  %span-#{$i} {
+    width: ($grid-width / $columns * $i) - ($margins * 2); 
+    @extend %grid-spacing;
   }
-
-  @for $i from 1 through $columns {
-    %span-#{$i} {
-      // Needs testing: using $grid-width might be problem if not 100%.
-      width: ($grid-width / $columns * $i) - ($margins * 2); 
-      @extend %grid-spacing;
-    }
-  }
-
 }

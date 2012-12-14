@@ -14,30 +14,30 @@
 
 <header class="global">
     <div class="mod--foo">
-        12
+        <code>.mod--foo</code>
     </div>
     <div class="mod--bar">
-        12
+        <code>.mod--bar</code>
     </div>
 </header>
 
 <section class="global">
     <article>
-        6
+        <code>article</code>
     </article>
     <aside class="mod--footnotes">
-        6
+        <code>.mod--footnotes</code>
     </aside>
     <article>
-        6
+        <code>article</code>
     </article>
     <aside class="mod--footnotes">
-        6
+        <code>.mod--footnotes</code>
     </aside>
 </section>
 
 <footer class="global">
     <article class="mod--credits">
-        24
+        <code>.mod--credits</code>
     </article>
 </footer>

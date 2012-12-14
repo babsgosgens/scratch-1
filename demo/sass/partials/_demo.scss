@@ -1,15 +1,39 @@
-  section.global article {
-    @extend %span-6;
-  }
   .mod--foo {
     @extend %span-12;
   }
   .mod--bar {
     @extend %span-12;
   }
-  .mod--footnotes {
-    @extend %span-6;
+
+  section.global article {
+    @extend %span-16;
   }
+  .mod--footnotes {
+    @extend %span-8;
+  }
+
   .mod--credits {
     @extend %span-24;
   }
+
+// @media only screen and (min-width: 57em) {
+
+//   .mod--foo {
+//     @extend %span-16;
+//   }
+//   .mod--bar {
+//     @extend %span-8;
+//   }
+
+//   section.global article {
+//     @extend %span-8;
+//   }
+//   .mod--footnotes {
+//     @extend %span-4;
+//   }
+
+//   .mod--credits {
+//     @extend %span-24;
+//   }
+  
+// }
