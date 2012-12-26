@@ -1,11 +1,11 @@
 <form>
     <fieldset>
         <legend>Inputs: Text</legend>
-        <label for="name">Name<input type="text" name="name" id="name" /></label>
-        <label for="email">Email<input type="email" name="email" id="email" /></label>
-        <label for="city">City<input type="text" name="city" id="city" /></label>
-        <label for="state">State<input type="text" name="state" id="state" /></label>
-        <label for="zip">Zip<input type="text" name="zip" id="zip" /></label>
+        <label for="name">Name<input type="text" name="name" id="name" speech x-webkit-speech></label>
+        <label for="email">Email<input type="email" name="email" id="email" speech x-webkit-speech></label>
+        <label for="city">City<input type="text" name="city" id="city" speech x-webkit-speech></label>
+        <label for="state">State<input type="text" name="state" id="state" speech x-webkit-speech></label>
+        <label for="zip">Zip<input type="text" name="zip" id="zip" speech x-webkit-speech></label>
         <legend>Checkbox</legend>
             <label for="info1"><input type="checkbox" name="info1" id="info1" /> Check 1</label>
             <label for="info2"><input type="checkbox" name="info2" id="info2" /> Check 2</label>
