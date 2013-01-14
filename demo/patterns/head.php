@@ -9,7 +9,7 @@
         <!-- NOTE: Uncomment to force Chrome frame for IE or simply delete
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         -->
-        <link rel="stylesheet" href="css/scratch.css?v=1">
+        <link rel="stylesheet" href="css/scratch.css<?php echo '?v=' . filemtime( 'css/scratch.css' ); ?>">
         <link rel="author" href="_docs/humans.txt">
         <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
         <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-72x72-precomposed.png">
