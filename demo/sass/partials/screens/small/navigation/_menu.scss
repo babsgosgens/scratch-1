@@ -33,20 +33,15 @@
   }
 }
 
-#global-nav {
+.global-nav {
   z-index: 100;
   margin: 0;
   width: 100%;
-  // cosmetic
-  // background: lighten($black, 40);
-  ul {
-    margin-bottom: 0;
-    a {
-      display: block;
-      padding: $baseLine;
-      &:hover, &:focus {
-        background: rgba(0,0,0,.2);
-      }
+  a {
+    display: block;
+    padding: $baseLine;
+    &:hover, &:focus {
+      background: rgba(0,0,0,.2);
     }
   }
 }
@@ -62,30 +57,4 @@
     // cosmetic
     // background: darken($accent, 5);
   }
-}
-
-@media only screen and (min-width: 750px) {
-
-  #global-nav {
-    position: relative;
-    left: 0;
-    bottom: 0;
-    // cosmetic
-    // background: lighten($black, 95);
-    ul {
-      // cosmetic
-      // text-align: center;
-      li {
-        display: inline
-      }
-      a {
-        display: inline-block
-      }
-    }
-  }
-
-  #toggler {
-    display: none 
-  }
-
 }

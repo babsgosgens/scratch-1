@@ -1,0 +1,60 @@
+////////////////////////////////
+// Markup Sample: Mobile Menu
+////////////////////////////////
+
+// <a id="toggler" class="mobile" aria-hidden="true" data-icon="4"></a>
+// <nav id="global-nav" role="navigation" class="global-nav visuallyhidden microcf">
+//     <ul>
+//         <li>
+//             <a href="#">anchor 1</a>
+//         </li>
+//         <li>
+//             <a href="#">anchor 2</a>
+//         </li>
+//         <li>
+//             <a href="#">anchor 3</a>
+//         </li>
+//     </ul>
+// </nav>
+
+.js .visuallyhidden {
+  @include visuallyhidden;
+}
+
+.js {
+  .hidden {
+    display: none;
+  }
+}
+
+.no-js {
+  #toggler {
+    display: none;
+  }
+}
+
+.global-nav {
+  z-index: 100;
+  margin: 0;
+  width: 100%;
+  a {
+    display: block;
+    padding: $baseLine;
+    &:hover, &:focus {
+      background: rgba(0,0,0,.2);
+    }
+  }
+}
+
+#toggler {
+  z-index: 200;
+  display: block;
+  width: 100%;
+  text-align: center;
+  // cosmetic
+  // background: $accent;
+  &:hover {
+    // cosmetic
+    // background: darken($accent, 5);
+  }
+}
